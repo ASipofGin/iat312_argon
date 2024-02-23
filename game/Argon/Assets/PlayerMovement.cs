@@ -144,18 +144,11 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
 
-        if (Mathf.Abs(horizontal) > 0.01f)
-        {
-            // The character is moving
-            playerCollider.sharedMaterial = movingMaterial;
-        }
-        else
-        {
-            // The character is idle
-            playerCollider.sharedMaterial = idleMaterial;
-        }
-
         grounded = IsGrounded();
+
+
+
+
 
         if (grounded)
         {
@@ -165,10 +158,22 @@ public class PlayerMovement : MonoBehaviour
                 rb.velocity = new Vector2(0, rb.velocity.y); // Reset horizontal velocity
                 wasDashing = false; // Reset the wasDashing flag
             }
+
+            if (Mathf.Abs(horizontal) > 0.01f)
+            {
+                // The character is moving
+                playerCollider.sharedMaterial = movingMaterial;
+            }
+            else
+            {
+                // The character is idle
+                playerCollider.sharedMaterial = idleMaterial;
+            }
         }
         else
         {
             coyoteTimeCounter -= Time.deltaTime;
+            playerCollider.sharedMaterial = movingMaterial;
         }
 
         if (Input.GetButtonDown("Jump"))
