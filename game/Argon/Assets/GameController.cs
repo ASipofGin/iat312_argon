@@ -6,10 +6,14 @@ public class GameController : MonoBehaviour
 {
     Vector2 checkpointPos;
     public Rigidbody2D rb;
+    Vector3 currScale;
+    public PlayerMovement pm;
     // Start is called before the first frame update
     
     private void Awake() {
         rb = GetComponent<Rigidbody2D>();
+        pm = GetComponent<PlayerMovement>();
+        currScale = transform.localScale;
 
     }
     
@@ -45,7 +49,9 @@ public class GameController : MonoBehaviour
         transform.localScale = new Vector3(0,0,0);
         yield return new WaitForSeconds(duration);
         transform.position = checkpointPos;
-        transform.localScale = new Vector3(0.7f,0.6553f,0.6553f);
+        transform.localScale = currScale;
+        pm.ResetFace();
+        pm.RestControl();
         rb.simulated = true;
     }
 }
