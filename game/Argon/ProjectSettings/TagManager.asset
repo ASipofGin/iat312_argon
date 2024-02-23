@@ -5,7 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
-  - CameraTrigger
+  - Ladder
+  - Key
+  - Box
   layers:
   - Default
   - TransparentFX
