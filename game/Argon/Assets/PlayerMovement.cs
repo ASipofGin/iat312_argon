@@ -124,6 +124,8 @@ public class PlayerMovement : MonoBehaviour
     private float dashTimeLeft;
     private float dashRecoveryLeft; // Recovery countdown
 
+    [SerializeField] private bool learnedDash = false;
+
     private bool wasDashing = false; // Track if the player was dashing in the previous frame
 
     [SerializeField] private Rigidbody2D rb;
@@ -191,7 +193,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // Dash input
-        if (Input.GetKeyDown(KeyCode.LeftShift) && canControl)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && canControl && learnedDash)
         {
             StartDash();
         }
@@ -300,5 +302,9 @@ public class PlayerMovement : MonoBehaviour
     public void RestControl()
     {
         canControl = true;
+    }
+
+    public void learnDash(){
+        learnedDash = true;
     }
 }
