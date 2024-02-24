@@ -280,7 +280,6 @@ public class PlayerMovement : MonoBehaviour
 
     public void SetParent(Transform newParent)
     {
-        _originalParent = transform.parent;
         transform.parent = newParent;
     }
 
