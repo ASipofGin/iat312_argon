@@ -21,5 +21,5 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: 2e9b3635f0a806648ae4438bf0a672ed, type: 2}
   - text: Four
     speaker: {fileID: 11400000, guid: 7e5129eae7c550b46ab102be697bf0da, type: 2}
-  background: {fileID: 21300000, guid: ab2be6ce32daf7e499b34f57e60198e7, type: 3}
-  nextScene: {fileID: 0}
+  background: {fileID: 21300000, guid: 56c5e199b0b88f24f864322af7cf8012, type: 3}
+  nextScene: {fileID: 11400000, guid: 55a8a18be5adfe74083fabf431c5e542, type: 2}
