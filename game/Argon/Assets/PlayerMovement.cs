@@ -138,9 +138,12 @@ public class PlayerMovement : MonoBehaviour
 
     private Transform _originalParent;
 
+    Animator animator;
+
     void Start()
     {
         _originalParent = transform.parent;
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -196,6 +199,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift) && canControl && learnedDash)
         {
             StartDash();
+            animator.SetBool("isDashing", true);
         }
 
         if (isDashing)
@@ -224,6 +228,8 @@ public class PlayerMovement : MonoBehaviour
             else
             {
                 canControl = true; // Re-enable control after recovery time
+                animator.SetBool("isDashing", false);
+                
             }
         }
 
