@@ -47,6 +47,7 @@ public class GameController : MonoBehaviour
 
         rb.simulated = false;
         transform.localScale = new Vector3(0,0,0);
+        pm.ResetAnimation();
         yield return new WaitForSeconds(duration);
         transform.position = checkpointPos;
         transform.localScale = currScale;

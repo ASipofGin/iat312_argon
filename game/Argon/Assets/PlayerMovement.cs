@@ -140,10 +140,14 @@ public class PlayerMovement : MonoBehaviour
 
     Animator animator;
 
+    ParticleSystem ps;
+
     void Start()
     {
         _originalParent = transform.parent;
         animator = GetComponent<Animator>();
+        ps = GetComponentInChildren<ParticleSystem>();
+        disableParticle();
     }
 
     void Update()
@@ -208,11 +212,13 @@ public class PlayerMovement : MonoBehaviour
             {
                 rb.velocity = new Vector2((isFacingRight ? 1 : -1) * dashSpeed, verticalDashBoost);
                 dashTimeLeft -= Time.deltaTime;
+                enableParticle();
             }
             else
             {
                 isDashing = false;
                 canControl = false; // Disable control after dashing
+                disableParticle();
                 dashRecoveryLeft = dashRecoveryTime; // Start recovery countdown
                 wasDashing = true; // Set wasDashing flag to true as the dash has just ended
             }
@@ -299,6 +305,11 @@ public class PlayerMovement : MonoBehaviour
         isFacingRight = true;
     }
 
+    public void ResetAnimation()
+    {
+        animator.SetBool("isDashing", false);
+    }
+
     void OnDisable()
     {
         rb.gravityScale = 1; // Reset gravity scale when the object is disabled
@@ -311,5 +322,15 @@ public class PlayerMovement : MonoBehaviour
 
     public void learnDash(){
         learnedDash = true;
+    }
+
+    private void disableParticle(){
+        ParticleSystem.EmissionModule emissionModule = ps.emission;
+        emissionModule.enabled = false;
+    }
+
+    private void enableParticle(){
+        ParticleSystem.EmissionModule emissionModule = ps.emission;
+        emissionModule.enabled = true;
     }
 }
