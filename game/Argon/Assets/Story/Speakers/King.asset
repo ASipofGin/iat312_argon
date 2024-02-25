@@ -14,3 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: King
   textColor: {r: 1, g: 0.6236073, b: 0.109803915, a: 1}
+  sprites:
+  - {fileID: 21300000, guid: 72d2b69840e067e45adc7d29dec2272a, type: 3}
+  - {fileID: 21300000, guid: 369618b9106e3f84f9a8806c95f49cf5, type: 3}
+  - {fileID: 21300000, guid: 0e71ea15269d7b24a9d73fcbd54d4c4c, type: 3}
+  prefab: {fileID: 5541306039259344143, guid: fd255a3364e164a44a242c86dd5bc687, type: 3}
