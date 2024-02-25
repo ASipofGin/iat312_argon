@@ -6,7 +6,7 @@ public class VNGameController : MonoBehaviour
 {
     public GameScene currentScene;
     public BottomBarController bottomBar;
-    public BackgroundController backgroundController;
+    public SpriteSwitcher backgroundController;
     public OptionsLogicController optionsController;
 
     private State state = State.IDLE;

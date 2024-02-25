@@ -14,3 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Princess
   textColor: {r: 1, g: 1, b: 1, a: 1}
+  sprites:
+  - {fileID: 21300000, guid: 16705e710f77a0e48b27d5fcfa352049, type: 3}
+  - {fileID: 21300000, guid: be21ce81441c57745b7510a498aa8ae3, type: 3}
+  - {fileID: 21300000, guid: 8fe05efce61a45c46bde1653a0a04f0a, type: 3}
+  prefab: {fileID: -4626282112700974074, guid: 2af4f97ec743cca4ebb1ec4e425e4d23, type: 3}
