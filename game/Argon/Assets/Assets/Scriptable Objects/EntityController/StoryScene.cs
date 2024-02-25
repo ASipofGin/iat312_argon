@@ -9,6 +9,8 @@ public class StoryScene : GameScene
     public Sprite background;
     public GameScene nextScene;
 
+    public bool isLastScene = false;
+    public string targetScene = "";
 
     [System.Serializable]
     public struct Sentence
@@ -33,6 +35,17 @@ public class StoryScene : GameScene
                 NONE, APPEAR, MOVE, DISAPPEAR
             }
         }
+    }
+
+    public bool isLast()
+    {
+        return isLastScene;
+
+    }
+
+    public string tScene()
+    {
+        return targetScene;
     }
 }
 
