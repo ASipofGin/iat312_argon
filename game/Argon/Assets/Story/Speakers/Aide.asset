@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Aide
   m_EditorClassIdentifier: 
   speakerName: Aide
-  textColor: {r: 1, g: 0.6236073, b: 0.109803915, a: 1}
+  textColor: {r: 0, g: 0.6792453, b: 0.054246616, a: 1}
   sprites:
   - {fileID: 21300000, guid: 93ce9c598672caf409d5ec735c987e32, type: 3}
   - {fileID: 21300000, guid: e7e43ef590832f44e99aa28039e8c2d5, type: 3}

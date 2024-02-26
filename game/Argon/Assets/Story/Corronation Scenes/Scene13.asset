@@ -10,22 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b6eefdd6d6dbb5a45966cb7ed84a2b8b, type: 3}
-  m_Name: Scene5
+  m_Name: Scene13
   m_EditorClassIdentifier: 
   sentences:
-  - text: One
-    speaker: {fileID: 11400000, guid: 2e9b3635f0a806648ae4438bf0a672ed, type: 2}
-    actions: []
-  - text: Two
+  - text: And thus, the princess' journey home begins.
+    speaker: {fileID: 11400000, guid: 8c9ced115d6e4ef4a827bdf4ec99bf41, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: 7e5129eae7c550b46ab102be697bf0da, type: 2}
+      spriteIndex: 0
+      actionType: 1
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+  - text: Where... Am... I?
     speaker: {fileID: 11400000, guid: 7e5129eae7c550b46ab102be697bf0da, type: 2}
     actions: []
-  - text: Three
-    speaker: {fileID: 11400000, guid: 2e9b3635f0a806648ae4438bf0a672ed, type: 2}
-    actions: []
-  - text: Four
-    speaker: {fileID: 11400000, guid: 7e5129eae7c550b46ab102be697bf0da, type: 2}
-    actions: []
-  background: {fileID: 21300000, guid: 591cfb10dd861d74bace4269b415c920, type: 3}
-  nextScene: {fileID: 11400000, guid: c644f6e6c370acc43b5458fdd374c0d4, type: 2}
+  background: {fileID: 21300000, guid: fa2ed3f748b1d5e4583099336137b2d2, type: 3}
+  nextScene: {fileID: 11400000}
   isLastScene: 1
   targetScene: PlatformTEST

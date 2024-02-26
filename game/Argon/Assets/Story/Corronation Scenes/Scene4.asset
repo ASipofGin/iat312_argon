@@ -13,19 +13,10 @@ MonoBehaviour:
   m_Name: Scene4
   m_EditorClassIdentifier: 
   sentences:
-  - text: One
-    speaker: {fileID: 11400000, guid: 2e9b3635f0a806648ae4438bf0a672ed, type: 2}
+  - text: 12 years later. The day of the princess' 18th birthday.
+    speaker: {fileID: 11400000, guid: 8c9ced115d6e4ef4a827bdf4ec99bf41, type: 2}
     actions: []
-  - text: Two
-    speaker: {fileID: 11400000, guid: 7e5129eae7c550b46ab102be697bf0da, type: 2}
-    actions: []
-  - text: Three
-    speaker: {fileID: 11400000, guid: 2e9b3635f0a806648ae4438bf0a672ed, type: 2}
-    actions: []
-  - text: Four
-    speaker: {fileID: 11400000, guid: 7e5129eae7c550b46ab102be697bf0da, type: 2}
-    actions: []
-  background: {fileID: 21300000, guid: 591cfb10dd861d74bace4269b415c920, type: 3}
+  background: {fileID: 21300000, guid: 9f6dbadfafac55d4293fb39f71daedb0, type: 3}
   nextScene: {fileID: 11400000, guid: 42cb94d786399a74b9ab95c976b735b1, type: 2}
   isLastScene: 0
   targetScene: 

@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6eefdd6d6dbb5a45966cb7ed84a2b8b, type: 3}
+  m_Name: Scene2
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: We gather here today to bear witness to the coronation
+    speaker: {fileID: 11400000, guid: 5ac72207819d68140a2929995c1e1873, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: 5ac72207819d68140a2929995c1e1873, type: 2}
+      spriteIndex: 0
+      actionType: 1
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+  - text: of the young princess of Argon. May this be a momentus occasion for all.
+    speaker: {fileID: 11400000, guid: 5ac72207819d68140a2929995c1e1873, type: 2}
+    actions: []
+  - text: My dear daughter, on this day I anoint you with the symbol of our kingdom.
+    speaker: {fileID: 11400000, guid: 2e9b3635f0a806648ae4438bf0a672ed, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: 5ac72207819d68140a2929995c1e1873, type: 2}
+      spriteIndex: 0
+      actionType: 3
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+    - speaker: {fileID: 11400000, guid: 2e9b3635f0a806648ae4438bf0a672ed, type: 2}
+      spriteIndex: 2
+      actionType: 1
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+    - speaker: {fileID: 11400000, guid: 7e5129eae7c550b46ab102be697bf0da, type: 2}
+      spriteIndex: 2
+      actionType: 1
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+  - text: May you grow into a monarch befitting of the throne of Argon.
+    speaker: {fileID: 11400000, guid: 2e9b3635f0a806648ae4438bf0a672ed, type: 2}
+    actions: []
+  background: {fileID: 21300000, guid: e8bf4dd921adc2b4696ca69013496475, type: 3}
+  nextScene: {fileID: 11400000, guid: 55a8a18be5adfe74083fabf431c5e542, type: 2}
+  isLastScene: 0
+  targetScene: 

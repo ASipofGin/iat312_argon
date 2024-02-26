@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34173fe8a8633434c930176b92e1db42, type: 3}
   m_Name: Narrator
   m_EditorClassIdentifier: 
-  speakerName: ???
+  speakerName: 
   textColor: {r: 0.7735849, g: 0.7735849, b: 0.7735849, a: 1}
   sprites: []
   prefab: {fileID: 0}

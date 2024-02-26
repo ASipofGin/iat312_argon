@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6eefdd6d6dbb5a45966cb7ed84a2b8b, type: 3}
+  m_Name: Scene5
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: Your Highness. I regret to inform you that his majesty has sucumb to illness.
+    speaker: {fileID: 11400000, guid: 5ac72207819d68140a2929995c1e1873, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: 5ac72207819d68140a2929995c1e1873, type: 2}
+      spriteIndex: 0
+      actionType: 1
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+    - speaker: {fileID: 11400000, guid: 7e5129eae7c550b46ab102be697bf0da, type: 2}
+      spriteIndex: 0
+      actionType: 1
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+  - text: His last thoughts were of you... I thought you would like to know.
+    speaker: {fileID: 11400000, guid: 5ac72207819d68140a2929995c1e1873, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: 7e5129eae7c550b46ab102be697bf0da, type: 2}
+      spriteIndex: 1
+      actionType: 0
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+  - text: Perhaps you should take some time away to clear your mind. I will arrange
+      a carriage.
+    speaker: {fileID: 11400000, guid: 5ac72207819d68140a2929995c1e1873, type: 2}
+    actions: []
+  - text: If you think that is best...
+    speaker: {fileID: 11400000, guid: 7e5129eae7c550b46ab102be697bf0da, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: 5ac72207819d68140a2929995c1e1873, type: 2}
+      spriteIndex: 0
+      actionType: 3
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+  background: {fileID: 21300000, guid: 6fbb2e23249640c4b88c6f8dd26f7221, type: 3}
+  nextScene: {fileID: 11400000, guid: ae08c290571b29e44ae856cb06aab7d3, type: 2}
+  isLastScene: 0
+  targetScene: 
