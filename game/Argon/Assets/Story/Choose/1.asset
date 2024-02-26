@@ -13,9 +13,7 @@ MonoBehaviour:
   m_Name: 1
   m_EditorClassIdentifier: 
   labels:
-  - text: Go to your coronation
-    nextScene: {fileID: 11400000, guid: ae164e9d79705514c82af16cd7a3b964, type: 2}
-  - text: Explore the hallway
-    nextScene: {fileID: 11400000, guid: 55a8a18be5adfe74083fabf431c5e542, type: 2}
-  - text: Do nothing
-    nextScene: {fileID: 11400000, guid: c644f6e6c370acc43b5458fdd374c0d4, type: 2}
+  - text: Spare him
+    nextScene: {fileID: 11400000, guid: a5df43b0e95d9b844810d92d17049449, type: 2}
+  - text: Kill him
+    nextScene: {fileID: 11400000, guid: d83de7ef3cda2b44fa289d8eafac624d, type: 2}

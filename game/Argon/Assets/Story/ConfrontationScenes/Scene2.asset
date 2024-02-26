@@ -10,34 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b6eefdd6d6dbb5a45966cb7ed84a2b8b, type: 3}
-  m_Name: Scene1
+  m_Name: Scene2
   m_EditorClassIdentifier: 
   sentences:
-  - text: So you have made it back...
+  - text: After an Intense battle the princess subjugates the false king
     speaker: {fileID: 11400000, guid: 5ac72207819d68140a2929995c1e1873, type: 2}
     actions:
     - speaker: {fileID: 11400000, guid: 5ac72207819d68140a2929995c1e1873, type: 2}
       spriteIndex: 1
-      actionType: 1
+      actionType: 3
       coords: {x: 0, y: 0}
       moveSpeed: 0
-  - text: You will pay for the death of my father
-    speaker: {fileID: 11400000, guid: 7e5129eae7c550b46ab102be697bf0da, type: 2}
-    actions:
     - speaker: {fileID: 11400000, guid: 7e5129eae7c550b46ab102be697bf0da, type: 2}
       spriteIndex: 0
-      actionType: 1
+      actionType: 3
       coords: {x: 0, y: 0}
       moveSpeed: 0
-  - text: And disgracing the royal throne. I will take back what is mine.
-    speaker: {fileID: 11400000, guid: 7e5129eae7c550b46ab102be697bf0da, type: 2}
-    actions:
-    - speaker: {fileID: 11400000, guid: 7e5129eae7c550b46ab102be697bf0da, type: 2}
-      spriteIndex: 0
-      actionType: 1
-      coords: {x: 0, y: 0}
-      moveSpeed: 0
-  background: {fileID: 21300000, guid: 1c29cf952fb571945b6ca6bb5e4442f0, type: 3}
-  nextScene: {fileID: 11400000, guid: d77702f18b9a31c4cba98f0e38aed82e, type: 2}
+  background: {fileID: 21300000, guid: 56c5e199b0b88f24f864322af7cf8012, type: 3}
+  nextScene: {fileID: 11400000, guid: 6fde4dd97225c9248a7c000c8a4cce11, type: 2}
   isLastScene: 0
   targetScene: 

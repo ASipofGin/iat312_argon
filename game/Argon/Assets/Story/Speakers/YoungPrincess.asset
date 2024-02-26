@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34173fe8a8633434c930176b92e1db42, type: 3}
+  m_Name: YoungPrincess
+  m_EditorClassIdentifier: 
+  speakerName: Princess
+  textColor: {r: 1, g: 1, b: 1, a: 1}
+  sprites:
+  - {fileID: 21300000, guid: b173f745d3c7f8d4186bae9f4e6e221b, type: 3}
+  - {fileID: 21300000, guid: d1070628f00e32343ab1a83aa9ad4ec8, type: 3}
+  - {fileID: 21300000, guid: a7b1bcb695f542c4da56188397a5ad6c, type: 3}
+  prefab: {fileID: 8722660592108173258, guid: c7a237f6b4a3b5e498097fe4eba251d8, type: 3}
