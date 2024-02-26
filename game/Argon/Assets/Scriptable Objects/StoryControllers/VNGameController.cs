@@ -79,7 +79,7 @@ public class VNGameController : MonoBehaviour
         {
             StoryScene storyScene = scene as StoryScene;
             backgroundController.SwitchImage(storyScene.background);
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(0.5f);
             bottomBar.ClearText();
             bottomBar.Show();
             yield return new WaitForSeconds(1f);
