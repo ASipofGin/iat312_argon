@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Princess
   m_EditorClassIdentifier: 
   speakerName: Princess
-  textColor: {r: 1, g: 1, b: 1, a: 1}
+  textColor: {r: 0.8679245, g: 0.29067284, b: 0.7608057, a: 1}
   sprites:
   - {fileID: 21300000, guid: 16705e710f77a0e48b27d5fcfa352049, type: 3}
   - {fileID: 21300000, guid: 8fe05efce61a45c46bde1653a0a04f0a, type: 3}
