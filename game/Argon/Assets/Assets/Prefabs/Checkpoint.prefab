@@ -145,6 +145,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 2674684603072992082}
+  passive: {fileID: 21300000, guid: 7eee6252cf6d3cb4a9341344060361e4, type: 3}
+  active: {fileID: 21300000, guid: b6163b6b672df4a44a6dd4e7cdcdcb88, type: 3}
 --- !u!1 &4677205075051849377
 GameObject:
   m_ObjectHideFlags: 0
