@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Scene13
   m_EditorClassIdentifier: 
   sentences:
-  - text: And thus, the princess' journey home begins.
+  - text: And thus, the princess' journey to rebuild the chalice, and return home
+      begins.
     speaker: {fileID: 11400000, guid: 8c9ced115d6e4ef4a827bdf4ec99bf41, type: 2}
     actions:
     - speaker: {fileID: 11400000, guid: 7e5129eae7c550b46ab102be697bf0da, type: 2}

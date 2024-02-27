@@ -16,6 +16,9 @@ MonoBehaviour:
   - text: The Chalice sacrifices itself to save the princess.
     speaker: {fileID: 11400000, guid: 8c9ced115d6e4ef4a827bdf4ec99bf41, type: 2}
     actions: []
+  - text: In turn, the gems encased within the chalice and strew all over the forest.
+    speaker: {fileID: 11400000, guid: 8c9ced115d6e4ef4a827bdf4ec99bf41, type: 2}
+    actions: []
   background: {fileID: 21300000, guid: ab9d575d086043848b03d5102b141b5d, type: 3}
   nextScene: {fileID: 11400000, guid: eea8b7da7c1752842b9da124ef1ab316, type: 2}
   isLastScene: 0
