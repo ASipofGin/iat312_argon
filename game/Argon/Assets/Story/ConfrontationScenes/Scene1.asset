@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Scene1
   m_EditorClassIdentifier: 
   sentences:
-  - text: So you have made it back...
+  - text: This cannot be...
     speaker: {fileID: 11400000, guid: 5ac72207819d68140a2929995c1e1873, type: 2}
     actions:
     - speaker: {fileID: 11400000, guid: 5ac72207819d68140a2929995c1e1873, type: 2}
@@ -21,6 +21,9 @@ MonoBehaviour:
       actionType: 1
       coords: {x: 0, y: 0}
       moveSpeed: 0
+  - text: It is not possible that you are alive...
+    speaker: {fileID: 11400000, guid: 5ac72207819d68140a2929995c1e1873, type: 2}
+    actions: []
   - text: You will pay for the death of my father
     speaker: {fileID: 11400000, guid: 7e5129eae7c550b46ab102be697bf0da, type: 2}
     actions:

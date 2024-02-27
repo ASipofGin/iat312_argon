@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Scene10
   m_EditorClassIdentifier: 
   sentences:
-  - text: 'The princess is percieved dead. '
+  - text: 'The princess is presumed dead by her pursuers. '
     speaker: {fileID: 11400000, guid: 8c9ced115d6e4ef4a827bdf4ec99bf41, type: 2}
     actions: []
   - text: However...
