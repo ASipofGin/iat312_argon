@@ -2627,8 +2627,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 1807449159}
-  passive: {fileID: 0}
-  active: {fileID: 0}
+  passive: {fileID: 21300000, guid: 7eee6252cf6d3cb4a9341344060361e4, type: 3}
+  active: {fileID: 21300000, guid: b6163b6b672df4a44a6dd4e7cdcdcb88, type: 3}
 --- !u!61 &852557676
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6629,8 +6629,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 1601401104}
-  passive: {fileID: 0}
-  active: {fileID: 0}
+  passive: {fileID: 21300000, guid: 7eee6252cf6d3cb4a9341344060361e4, type: 3}
+  active: {fileID: 21300000, guid: b6163b6b672df4a44a6dd4e7cdcdcb88, type: 3}
 --- !u!61 &1983399456
 BoxCollider2D:
   m_ObjectHideFlags: 0
