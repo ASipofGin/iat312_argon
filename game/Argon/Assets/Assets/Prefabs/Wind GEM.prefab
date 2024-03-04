@@ -102,6 +102,7 @@ MonoBehaviour:
   isPickedUp: 0
   amp: 0.3
   freq: 3
+  id: attack
 --- !u!61 &5299398909651516074
 BoxCollider2D:
   m_ObjectHideFlags: 0
