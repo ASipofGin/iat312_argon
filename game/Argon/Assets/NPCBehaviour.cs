@@ -11,7 +11,7 @@ public class NPCBehaviour : MonoBehaviour
     public Text dialogueText;
     public Text npcName;
     public string[] dialogue;
-    public string name;
+    public new string name;
     private int index;
 
     public float textSpeed;
@@ -37,9 +37,12 @@ public class NPCBehaviour : MonoBehaviour
 
     public void zeroText()
     {
-        dialogueText.text = "";
-        index = 0;
-        dialoguePanel.SetActive(false);
+        if (dialoguePanel != null){
+            dialogueText.text = "";
+            index = 0;
+            dialoguePanel.SetActive(false);
+        }
+
     }
 
     IEnumerator TextEffect()
