@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    // Start is called before the first frame update
-
+    // Existing variables
     private float timeBtwAttack;
     public float startTimeBtwAttack;
 
@@ -18,43 +17,62 @@ public class PlayerAttack : MonoBehaviour
 
     Animator animator;
 
+    // Audio variables
+    public AudioClip swingClip;
+    public AudioClip swingHitClip;
+    private AudioSource audioSource;
+
     void Start()
     {
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>(); // Ensure there's an AudioSource component attached
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (canAttack == true){
-            if(timeBtwAttack <= 0){
-                    animator.SetBool("isAttacking", false);
-                if(Input.GetKey(KeyCode.F)){
+        if (canAttack == true)
+        {
+            if (timeBtwAttack <= 0)
+            {
+                animator.SetBool("isAttacking", false);
+                if (Input.GetKey(KeyCode.F))
+                {
                     Debug.Log("Attack pressed");
                     animator.SetBool("isAttacking", true);
                     Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
-                    for (int i = 0; i < enemiesToDamage.Length; i++) {
-                        enemiesToDamage[i].GetComponentInParent<enemyPatrol>().TakeDamage(damage);
+                    if (enemiesToDamage.Length > 0)
+                    {
+                        // Hit enemy, play "swing hit" audio
+                        audioSource.PlayOneShot(swingHitClip);
                         Debug.Log("Enemy Hit");
-                        
+                        for (int i = 0; i < enemiesToDamage.Length; i++)
+                        {
+                            enemiesToDamage[i].GetComponentInParent<enemyPatrol>().TakeDamage(damage);
+                        }
+                    }
+                    else
+                    {
+                        // Swung at the air, play "swing" audio
+                        audioSource.PlayOneShot(swingClip);
                     }
                     timeBtwAttack = startTimeBtwAttack;
                 }
-
-
-            }else{
+            }
+            else
+            {
                 timeBtwAttack -= Time.deltaTime;
             }
         }
-
     }
 
-    void OnDrawGizmosSelected() {
+    void OnDrawGizmosSelected()
+    {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(attackPos.position, attackRange);
     }
 
-    public void learnAttack(){
+    public void learnAttack()
+    {
         canAttack = true;
     }
 }

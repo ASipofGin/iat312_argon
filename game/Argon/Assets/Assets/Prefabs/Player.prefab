@@ -4830,6 +4830,37 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!1 &5624556784578227242
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1629717465997845439}
+  m_Layer: 0
+  m_Name: AttackPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1629717465997845439
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5624556784578227242}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.98, y: -0.05, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1108754857383299621}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6527475083539178466
 GameObject:
   m_ObjectHideFlags: 0
@@ -4874,6 +4905,7 @@ GameObject:
   - component: {fileID: 5937418450014030292}
   - component: {fileID: 7574425133151514344}
   - component: {fileID: 8234150860712657505}
+  - component: {fileID: 1755486946955186499}
   - component: {fileID: 5784771351151491115}
   - component: {fileID: 5332947006477168231}
   - component: {fileID: 8804597648065897828}
@@ -4899,6 +4931,7 @@ Transform:
   m_Children:
   - {fileID: 6479587120822886011}
   - {fileID: 515818271680782500}
+  - {fileID: 1629717465997845439}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &5696976490955301598
@@ -5036,6 +5069,28 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1755486946955186499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6706250566071806755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b938c06f52be16944ac24bbf191a281d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startTimeBtwAttack: 0.4
+  attackPos: {fileID: 1629717465997845439}
+  attackRange: 1.1
+  whatIsEnemies:
+    serializedVersion: 2
+    m_Bits: 64
+  damage: 1
+  canAttack: 0
+  swingClip: {fileID: 0}
+  swingHitClip: {fileID: 0}
 --- !u!114 &5784771351151491115
 MonoBehaviour:
   m_ObjectHideFlags: 0
