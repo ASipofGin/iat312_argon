@@ -247,6 +247,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 660676392017518309, guid: 89b3b8d6d774b00418f420014148a182, type: 3}
+      propertyPath: m_GravityScale
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 3499591648265121925, guid: 89b3b8d6d774b00418f420014148a182, type: 3}
       propertyPath: m_LocalPosition.x
       value: -36.82
@@ -298,6 +302,18 @@ PrefabInstance:
     - target: {fileID: 4985518516416931568, guid: 89b3b8d6d774b00418f420014148a182, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5451030166319813567, guid: 89b3b8d6d774b00418f420014148a182, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: a21f70747b2d41b4896ec0fca041db9d, type: 2}
+    - target: {fileID: 9036880975880725735, guid: 89b3b8d6d774b00418f420014148a182, type: 3}
+      propertyPath: isPatrol
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9036880975880725735, guid: 89b3b8d6d774b00418f420014148a182, type: 3}
+      propertyPath: walkDirection.x
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

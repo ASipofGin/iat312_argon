@@ -145,6 +145,9 @@ public class PlayerMovement : MonoBehaviour
     public AudioClip dashClip;
     private AudioSource audioSource;
 
+    private float idleTransitionDelay = 0.05f;
+    private float currentIdleTransitionTime = 0f;
+
     void Start()
     {
         _originalParent = transform.parent;
@@ -176,7 +179,13 @@ public class PlayerMovement : MonoBehaviour
             {
                 // The character is moving
                 playerCollider.sharedMaterial = movingMaterial;
+                currentIdleTransitionTime = idleTransitionDelay;
                 animator.SetBool("isMoving", true);
+            }
+            else if (currentIdleTransitionTime > 0)
+            {
+                // Countdown before transitioning to idle
+                currentIdleTransitionTime -= Time.deltaTime;
             }
             else
             {
@@ -189,6 +198,11 @@ public class PlayerMovement : MonoBehaviour
         {
             coyoteTimeCounter -= Time.deltaTime;
             playerCollider.sharedMaterial = movingMaterial;
+            if (Mathf.Abs(horizontal) > 0.01f)
+            {
+                animator.SetBool("isMoving", true);
+            }
+            
         }
 
         if (Input.GetButtonDown("Jump"))

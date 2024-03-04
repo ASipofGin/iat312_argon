@@ -3446,7 +3446,7 @@ MonoBehaviour:
   dialogueText: {fileID: 2038391363}
   npcName: {fileID: 1025386298}
   dialogue:
-  - hello
+  - What are you doing here?
   - world
   - 3
   name: Homelesss man
