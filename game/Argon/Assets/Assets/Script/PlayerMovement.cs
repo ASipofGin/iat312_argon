@@ -142,11 +142,15 @@ public class PlayerMovement : MonoBehaviour
 
     ParticleSystem ps;
 
+    public AudioClip dashClip;
+    private AudioSource audioSource;
+
     void Start()
     {
         _originalParent = transform.parent;
         animator = GetComponent<Animator>();
         ps = GetComponentInChildren<ParticleSystem>();
+        audioSource = GetComponent<AudioSource>();
         disableParticle();
     }
 
@@ -172,11 +176,13 @@ public class PlayerMovement : MonoBehaviour
             {
                 // The character is moving
                 playerCollider.sharedMaterial = movingMaterial;
+                animator.SetBool("isMoving", true);
             }
             else
             {
                 // The character is idle
                 playerCollider.sharedMaterial = idleMaterial;
+                animator.SetBool("isMoving", false);
             }
         }
         else
@@ -288,6 +294,11 @@ public class PlayerMovement : MonoBehaviour
         // Apply both horizontal and vertical boost for the dash
         rb.velocity = new Vector2((isFacingRight ? 1 : -1) * dashSpeed, verticalDashBoost);
         rb.gravityScale = 0; // Optionally, remove gravity effect during dash
+        if (audioSource.isPlaying == false)
+            {
+                audioSource.time = 0.1f;
+                audioSource.PlayOneShot(dashClip);
+            }
     }
 
     public void SetParent(Transform newParent)
@@ -332,5 +343,9 @@ public class PlayerMovement : MonoBehaviour
     private void enableParticle(){
         ParticleSystem.EmissionModule emissionModule = ps.emission;
         emissionModule.enabled = true;
+    }
+
+    public bool controllable(){
+        return canControl;
     }
 }

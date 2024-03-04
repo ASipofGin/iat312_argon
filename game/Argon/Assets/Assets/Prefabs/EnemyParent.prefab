@@ -176,7 +176,8 @@ MonoBehaviour:
   health: 2
   pointA: {fileID: 7192509841517729168}
   pointB: {fileID: 7177674893204092543}
-  speed: 3
+  setSpeed: 3
+  startDazedTime: 0.6
   sprite: {fileID: 0}
 --- !u!95 &7831157807833772046
 Animator:

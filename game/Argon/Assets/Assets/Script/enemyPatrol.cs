@@ -10,8 +10,10 @@ public class enemyPatrol : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     private Transform currentPoint;
-    public float speed;
-
+    public float setSpeed;
+    private float speed;
+    private float dazedTime;
+    public float startDazedTime;
     public SpriteRenderer sprite;
     // Start is called before the first frame update
     void Start()
@@ -28,6 +30,13 @@ public class enemyPatrol : MonoBehaviour
     {
         if(health <= 0){
             StartCoroutine(killSelf());
+        }
+
+        if(dazedTime <= 0){
+            speed = setSpeed;
+        }else{
+            speed = 0;
+            dazedTime -= Time.deltaTime;
         }
 
         Vector2 point = currentPoint.position - transform.position;
@@ -78,6 +87,7 @@ public class enemyPatrol : MonoBehaviour
     }
 
     public void TakeDamage(int damage){
+        dazedTime = startDazedTime;
         StartCoroutine(FlashRed());
         health -= damage;
     }

@@ -22,29 +22,30 @@ public class PlayerAttack : MonoBehaviour
     public AudioClip swingHitClip;
     private AudioSource audioSource;
 
+    private PlayerMovement pm;
+
     void Start()
     {
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>(); // Ensure there's an AudioSource component attached
+        pm = GetComponent<PlayerMovement>();
     }
 
     void Update()
     {
-        if (canAttack == true)
+        if (canAttack == true && pm.controllable())
         {
             if (timeBtwAttack <= 0)
             {
                 animator.SetBool("isAttacking", false);
                 if (Input.GetKey(KeyCode.F))
                 {
-                    Debug.Log("Attack pressed");
                     animator.SetBool("isAttacking", true);
                     Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
                     if (enemiesToDamage.Length > 0)
                     {
                         // Hit enemy, play "swing hit" audio
                         audioSource.PlayOneShot(swingHitClip);
-                        Debug.Log("Enemy Hit");
                         for (int i = 0; i < enemiesToDamage.Length; i++)
                         {
                             enemiesToDamage[i].GetComponentInParent<enemyPatrol>().TakeDamage(damage);
