@@ -9,6 +9,7 @@ TagManager:
   - Key
   - Box
   - Obstacle
+  - NPC
   layers:
   - Default
   - TransparentFX
