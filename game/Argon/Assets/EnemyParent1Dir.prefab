@@ -149,8 +149,8 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_GravityScale: 26.17
+  m_Material: {fileID: 6200000, guid: a21f70747b2d41b4896ec0fca041db9d, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -179,8 +179,8 @@ MonoBehaviour:
   setSpeed: 3
   startDazedTime: 0.6
   sprite: {fileID: 0}
-  isPatrol: 1
-  walkDirection: {x: 1, y: 0}
+  isPatrol: 0
+  walkDirection: {x: -2, y: 0}
 --- !u!95 &7831157807833772046
 Animator:
   serializedVersion: 5
@@ -212,7 +212,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3499591648265121925}
   m_Layer: 0
-  m_Name: EnemyParent
+  m_Name: EnemyParent1Dir
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

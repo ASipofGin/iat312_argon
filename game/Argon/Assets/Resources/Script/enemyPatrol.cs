@@ -210,4 +210,12 @@ public class enemyPatrol : MonoBehaviour
         StartCoroutine(FlashRed());
         health -= damage;
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Despawn"))
+        {
+            Destroy(transform.parent.gameObject); // Destroy the enemy object
+        }
+    }
 }

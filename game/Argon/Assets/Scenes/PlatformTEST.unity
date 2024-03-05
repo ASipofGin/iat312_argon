@@ -3636,7 +3636,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8181920528368480956, guid: 459951e1da95d7d4998d42253363cb06, type: 3}
       propertyPath: targetScene
-      value: VNConfrontation
+      value: Fire Stage
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

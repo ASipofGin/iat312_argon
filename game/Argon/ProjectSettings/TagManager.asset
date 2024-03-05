@@ -10,6 +10,7 @@ TagManager:
   - Box
   - Obstacle
   - NPC
+  - Despawn
   layers:
   - Default
   - TransparentFX

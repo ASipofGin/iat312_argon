@@ -4905,7 +4905,7 @@ GameObject:
   - component: {fileID: 5937418450014030292}
   - component: {fileID: 7574425133151514344}
   - component: {fileID: 8234150860712657505}
-  - component: {fileID: 2493745254773911533}
+  - component: {fileID: 1876320552571791028}
   - component: {fileID: 1755486946955186499}
   - component: {fileID: 5784771351151491115}
   - component: {fileID: 5332947006477168231}
@@ -5066,11 +5066,11 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!82 &2493745254773911533
+--- !u!82 &1876320552571791028
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
