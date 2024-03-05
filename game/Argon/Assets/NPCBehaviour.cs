@@ -19,7 +19,7 @@ public class NPCBehaviour : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && playerProximity)
+        if (Input.GetKeyDown(KeyCode.E) && playerProximity && !dialoguePanel.activeInHierarchy)
         {
             if (dialoguePanel.activeInHierarchy)
             {
@@ -27,7 +27,7 @@ public class NPCBehaviour : MonoBehaviour
             }
             else
             {
-                
+                zeroText();
                 dialoguePanel.SetActive(true);
                 npcName.text = name;
                 StartCoroutine(TextEffect());
