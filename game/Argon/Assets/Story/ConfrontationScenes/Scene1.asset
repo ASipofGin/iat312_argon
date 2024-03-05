@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentences:
   - text: This cannot be...
-    speaker: {fileID: 11400000, guid: 5ac72207819d68140a2929995c1e1873, type: 2}
+    speaker: {fileID: 11400000, guid: 23830d8d38fbb2543bd1c79da8346d09, type: 2}
     actions:
-    - speaker: {fileID: 11400000, guid: 5ac72207819d68140a2929995c1e1873, type: 2}
+    - speaker: {fileID: 11400000, guid: 23830d8d38fbb2543bd1c79da8346d09, type: 2}
       spriteIndex: 1
       actionType: 1
       coords: {x: 0, y: 0}
       moveSpeed: 0
   - text: It is not possible that you are alive...
-    speaker: {fileID: 11400000, guid: 5ac72207819d68140a2929995c1e1873, type: 2}
+    speaker: {fileID: 11400000, guid: 23830d8d38fbb2543bd1c79da8346d09, type: 2}
     actions: []
   - text: How could you do this...
     speaker: {fileID: 11400000, guid: 7e5129eae7c550b46ab102be697bf0da, type: 2}
@@ -43,7 +43,7 @@ MonoBehaviour:
       actionType: 1
       coords: {x: 0, y: 0}
       moveSpeed: 0
-  background: {fileID: 21300000, guid: 1c29cf952fb571945b6ca6bb5e4442f0, type: 3}
+  background: {fileID: 21300000, guid: 56c5e199b0b88f24f864322af7cf8012, type: 3}
   nextScene: {fileID: 11400000, guid: d77702f18b9a31c4cba98f0e38aed82e, type: 2}
   isLastScene: 0
   targetScene: 

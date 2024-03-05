@@ -16,7 +16,7 @@ MonoBehaviour:
   - text: The Argon kingdom tapestry has been replaced.
     speaker: {fileID: 11400000, guid: 8c9ced115d6e4ef4a827bdf4ec99bf41, type: 2}
     actions: []
-  background: {fileID: 21300000, guid: 9b8e60471d5175946861fe487a04c98c, type: 3}
+  background: {fileID: 21300000, guid: 64270a0bef8d196489033e0385fd9062, type: 3}
   nextScene: {fileID: 11400000, guid: 3e78a14e1e80cea4e98952d8f67bbf8e, type: 2}
   isLastScene: 0
   targetScene: 

@@ -16,7 +16,7 @@ MonoBehaviour:
   - text: After an Intense battle the princess subjugates the false king.
     speaker: {fileID: 11400000, guid: 8c9ced115d6e4ef4a827bdf4ec99bf41, type: 2}
     actions:
-    - speaker: {fileID: 11400000, guid: 5ac72207819d68140a2929995c1e1873, type: 2}
+    - speaker: {fileID: 11400000, guid: 23830d8d38fbb2543bd1c79da8346d09, type: 2}
       spriteIndex: 1
       actionType: 3
       coords: {x: 0, y: 0}
