@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
 public class NPCBehaviour : MonoBehaviour
 {
-
     public GameObject dialoguePanel;
     public Text dialogueText;
     public Text npcName;
@@ -17,9 +15,11 @@ public class NPCBehaviour : MonoBehaviour
     public float textSpeed;
     public bool playerProximity;
 
+    private Coroutine textEffectCoroutine; // Reference to the current running text effect coroutine
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && playerProximity && !dialoguePanel.activeInHierarchy)
+        if (Input.GetKeyDown(KeyCode.E) && playerProximity)
         {
             if (dialoguePanel.activeInHierarchy)
             {
@@ -30,24 +30,29 @@ public class NPCBehaviour : MonoBehaviour
                 zeroText();
                 dialoguePanel.SetActive(true);
                 npcName.text = name;
-                StartCoroutine(TextEffect());
+                textEffectCoroutine = StartCoroutine(TextEffect()); // Start the coroutine and keep a reference
             }
         }
     }
 
     public void zeroText()
     {
-        if (dialoguePanel != null){
+        if (dialoguePanel != null)
+        {
             dialogueText.text = "";
             index = 0;
             dialoguePanel.SetActive(false);
+            if (textEffectCoroutine != null)
+            {
+                StopCoroutine(textEffectCoroutine); // Stop the coroutine if it's running
+                textEffectCoroutine = null; // Clear the reference
+            }
         }
-
     }
 
     IEnumerator TextEffect()
     {
-        foreach(char letter in dialogue[index].ToCharArray())
+        foreach (char letter in dialogue[index].ToCharArray())
         {
             dialogueText.text += letter;
             yield return new WaitForSeconds(textSpeed);
@@ -56,11 +61,11 @@ public class NPCBehaviour : MonoBehaviour
 
     public void NextLine()
     {
-        if(index < dialogue.Length - 1)
+        if (index < dialogue.Length - 1)
         {
             index++;
             dialogueText.text = "";
-            StartCoroutine(TextEffect());
+            textEffectCoroutine = StartCoroutine(TextEffect()); // Start the coroutine and keep a reference
         }
         else
         {
@@ -70,7 +75,7 @@ public class NPCBehaviour : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
             playerProximity = true;
         }
@@ -81,8 +86,7 @@ public class NPCBehaviour : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerProximity = false;
-            zeroText();
+            zeroText(); // This will now also stop the coroutine
         }
     }
-
 }
