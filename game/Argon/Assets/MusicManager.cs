@@ -4,13 +4,6 @@ public class MusicManager : MonoBehaviour
 {
     private void Awake()
     {
-        DontDestroyOnLoad(gameObject); // Prevent the music player from being destroyed on load
-
-        // If there's already a music player in the scene, destroy this one to avoid duplicates
-        if (FindObjectsOfType<MusicManager>().Length > 1)
-        {
-            Destroy(gameObject);
-        }
     }
 
     void Start()

@@ -180,7 +180,10 @@ public class PlayerMovement : MonoBehaviour
                 // The character is moving
                 playerCollider.sharedMaterial = movingMaterial;
                 currentIdleTransitionTime = idleTransitionDelay;
-                animator.SetBool("isMoving", true);
+                if (animator != null){
+                animator.SetBool("isMoving", true);                    
+                }
+
             }
             else if (currentIdleTransitionTime > 0)
             {
@@ -191,7 +194,10 @@ public class PlayerMovement : MonoBehaviour
             {
                 // The character is idle
                 playerCollider.sharedMaterial = idleMaterial;
-                animator.SetBool("isMoving", false);
+                if (animator != null){
+                animator.SetBool("isMoving", false);                    
+                }
+
             }
         }
         else
@@ -200,7 +206,10 @@ public class PlayerMovement : MonoBehaviour
             playerCollider.sharedMaterial = movingMaterial;
             if (Mathf.Abs(horizontal) > 0.01f)
             {
-                animator.SetBool("isMoving", true);
+                if (animator != null){
+                animator.SetBool("isMoving", true);                
+                }
+
             }
             
         }
