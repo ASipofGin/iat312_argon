@@ -7,11 +7,14 @@ public class PlayerReveal : MonoBehaviour
 
     public bool learnedReveal = false; // Initially set to false.
 
+    private ElementalSightTestController estc;
+
     // Start is called before the first frame update
     void Start()
     {
         // Initially hide all revealable objects
         ToggleReveal(false);
+        estc = GetComponentInChildren<ElementalSightTestController>();
     }
 
     // Update is called once per frame
@@ -22,6 +25,11 @@ public class PlayerReveal : MonoBehaviour
         {
             isRevealActive = !isRevealActive; // Toggle the state
             ToggleReveal(isRevealActive);
+            if (isRevealActive){
+                estc.SightActive();
+            }else{
+                estc.SightDisable();
+            }
         }
     }
 
