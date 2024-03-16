@@ -12,7 +12,7 @@ public class PlayerSummon : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.C) && learnedSummon) // Change to KeyCode.C for the 'C' key
+        if (Input.GetKeyDown(KeyCode.R) && learnedSummon) // Change to KeyCode.C for the 'C' key
         {
             SummonPrefab();
         }

@@ -128,11 +128,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6706250566071806755, guid: e23c4de183646f04f972a7022332a4e3, type: 3}
   m_PrefabInstance: {fileID: 7581086056375773896}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &54906711 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1108754857383299621, guid: e23c4de183646f04f972a7022332a4e3, type: 3}
-  m_PrefabInstance: {fileID: 7581086056375773896}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &74475837
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1090,7 +1085,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.8522, y: -0.9, z: -10}
+  m_LocalPosition: {x: -1.8522, y: 0.594084, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2916,7 +2911,7 @@ MonoBehaviour:
   m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 54906711}
+  m_Follow: {fileID: 7581086056375773897}
   m_Lens:
     FieldOfView: 34
     OrthographicSize: 4.84
@@ -2945,7 +2940,7 @@ Transform:
   m_GameObject: {fileID: 1414573652}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.8522, y: -0.9, z: -10}
+  m_LocalPosition: {x: -1.8522, y: 0.594084, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4089,12 +4084,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1914029411}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88ef085d1144cd14794a6a3e85d5fcd8, type: 3}
+  m_Script: {fileID: 11500000, guid: ba80225ab3877e64abf4d59669ecb6de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 3922621771484714106, guid: 08e2833e0bc99af46b73d6419b6a858d, type: 3}
   spawnInterval: 3
-  maxEnemies: 999
+  maxEnemies: 10
 --- !u!4 &1914029413
 Transform:
   m_ObjectHideFlags: 0
@@ -4808,6 +4803,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e23c4de183646f04f972a7022332a4e3, type: 3}
+--- !u!4 &7581086056375773897 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5706514502026376084, guid: e23c4de183646f04f972a7022332a4e3, type: 3}
+  m_PrefabInstance: {fileID: 7581086056375773896}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

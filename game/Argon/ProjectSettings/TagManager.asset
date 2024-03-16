@@ -12,6 +12,7 @@ TagManager:
   - NPC
   - Despawn
   - Revealable
+  - GameManager
   layers:
   - Default
   - TransparentFX
