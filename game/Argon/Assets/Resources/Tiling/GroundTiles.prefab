@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3938252737174096016}
   - component: {fileID: 2038972567725140130}
   - component: {fileID: 6588793872416040616}
+  - component: {fileID: 3730735413120731238}
   m_Layer: 3
   m_Name: GroundTiles
   m_TagString: Ground
@@ -79,7 +80,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 23.1245, y: 5}
+  m_Size: {x: 39.46, y: 5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -122,11 +123,24 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 18.83, y: 5}
-    newSize: {x: 23.1245, y: 5}
+    newSize: {x: 39.46, y: 5}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
     adaptiveTiling: 0
-  m_AutoTiling: 1
+  m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 18.83, y: 5}
   m_EdgeRadius: 0
+--- !u!114 &3730735413120731238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3014010731833906441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b760414b2f61d2c47a943a515465aecf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  topOffset: 0.24
