@@ -151,5 +151,5 @@ MonoBehaviour:
   - world
   - 3
   name: Homelesss man
-  textSpeed: 0.06
+  textSpeed: 0.03
   playerProximity: 0
