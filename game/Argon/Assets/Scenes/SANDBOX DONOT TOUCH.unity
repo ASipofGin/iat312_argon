@@ -172,6 +172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   revealKey: 114
   learnedReveal: 0
+  cooldownDuration: 0.6
 --- !u!1001 &91651124
 PrefabInstance:
   m_ObjectHideFlags: 0

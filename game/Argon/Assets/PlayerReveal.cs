@@ -6,8 +6,10 @@ public class PlayerReveal : MonoBehaviour
     private bool isRevealActive = false; // Tracks the state of the reveal ability
 
     public bool learnedReveal = false; // Initially set to false.
-
     private ElementalSightTestController estc;
+
+    public float cooldownDuration = 5.0f; // Duration of cooldown in seconds
+    private float cooldownTimer = 0.0f; // Timer to track cooldown
 
     // Start is called before the first frame update
     void Start()
@@ -20,8 +22,14 @@ public class PlayerReveal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Check for the reveal key press
-        if (Input.GetKeyDown(revealKey) && learnedReveal)
+        // If on cooldown, decrement the cooldown timer
+        if (cooldownTimer > 0)
+        {
+            cooldownTimer -= Time.deltaTime;
+        }
+
+        // Check for the reveal key press and ensure ability is not on cooldown
+        if (Input.GetKeyDown(revealKey) && learnedReveal && cooldownTimer <= 0)
         {
             isRevealActive = !isRevealActive; // Toggle the state
             ToggleReveal(isRevealActive);
@@ -30,6 +38,9 @@ public class PlayerReveal : MonoBehaviour
             }else{
                 estc.SightDisable();
             }
+
+            // Reset the cooldown timer
+            cooldownTimer = cooldownDuration;
         }
     }
 
