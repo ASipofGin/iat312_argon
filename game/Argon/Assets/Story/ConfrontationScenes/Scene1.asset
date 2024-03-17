@@ -45,5 +45,5 @@ MonoBehaviour:
       moveSpeed: 0
   background: {fileID: 21300000, guid: 56c5e199b0b88f24f864322af7cf8012, type: 3}
   nextScene: {fileID: 11400000, guid: d77702f18b9a31c4cba98f0e38aed82e, type: 2}
-  isLastScene: 0
-  targetScene: 
+  isLastScene: 1
+  targetScene: Aide Fight
