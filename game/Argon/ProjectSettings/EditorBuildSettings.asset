@@ -15,14 +15,26 @@ EditorBuildSettings:
     path: Assets/Scenes/Tutorial.unity
     guid: 84a0d9cff292e584692b84d52951d0a4
   - enabled: 1
+    path: Assets/Scenes/Hallway.unity
+    guid: 33eebbd74348ba4429451a1ee3b242d8
+  - enabled: 1
     path: Assets/Scenes/VNCorronation.unity
     guid: d8c05109a7f0b68468426cbfeb9e6c30
   - enabled: 1
     path: Assets/Scenes/PlatformTEST.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
+    path: Assets/Scenes/Filler level 1.unity
+    guid: c22325f2ad791414582c2a91863e409b
+  - enabled: 1
     path: Assets/Scenes/Fire Stage.unity
     guid: a65dbb511a7a32d44ac941a992a176c3
+  - enabled: 1
+    path: Assets/Scenes/Filler level 2.unity
+    guid: ae143587637eecb458125a6d677277ad
+  - enabled: 1
+    path: Assets/Scenes/Earth Stage.unity
+    guid: 9aacd566d6729234a9d283ceba2e8fac
   - enabled: 1
     path: Assets/Scenes/VNConfrontation.unity
     guid: 63027c95bd0dba0478ade7f22ff2668c
