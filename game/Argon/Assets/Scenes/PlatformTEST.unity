@@ -1859,7 +1859,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 11344662d716aff49beedcc6229c7dfa, type: 3}
     - target: {fileID: 8210044653633382043, guid: 0e962d9cdc9778147be9b83c32259d4f, type: 3}
       propertyPath: name
-      value: Wind Guide
+      value: Wind Spirit
       objectReference: {fileID: 0}
     - target: {fileID: 8210044653633382043, guid: 0e962d9cdc9778147be9b83c32259d4f, type: 3}
       propertyPath: npcName
@@ -6483,7 +6483,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: dabd4fdc32b980c449fbebcd4dc10272, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.36862746}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
