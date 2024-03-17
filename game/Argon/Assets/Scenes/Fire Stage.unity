@@ -994,7 +994,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8210044653633382043, guid: 0e962d9cdc9778147be9b83c32259d4f, type: 3}
       propertyPath: dialogue.Array.data[0]
-      value: This next trial will test your might. If you wish to be worth of the
+      value: This next trial will test your might. If you wish to be worthy of the
         throne and the Argon Chalice, then beat this trial. The consequences are
         dire.
       objectReference: {fileID: 0}
