@@ -43,6 +43,17 @@ MonoBehaviour:
       actionType: 1
       coords: {x: 0, y: 0}
       moveSpeed: 0
+  - text: You will never understand how I felt living in your father's shadow!
+    speaker: {fileID: 11400000, guid: 23830d8d38fbb2543bd1c79da8346d09, type: 2}
+    actions: []
+  - text: The false king calls for his guards and runs away
+    speaker: {fileID: 11400000, guid: 8c9ced115d6e4ef4a827bdf4ec99bf41, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: 23830d8d38fbb2543bd1c79da8346d09, type: 2}
+      spriteIndex: 1
+      actionType: 3
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
   background: {fileID: 21300000, guid: 56c5e199b0b88f24f864322af7cf8012, type: 3}
   nextScene: {fileID: 11400000, guid: d77702f18b9a31c4cba98f0e38aed82e, type: 2}
   isLastScene: 1
