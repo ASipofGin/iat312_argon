@@ -177,7 +177,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5918129840377076012, guid: 0e962d9cdc9778147be9b83c32259d4f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.66
+      value: -2.69
       objectReference: {fileID: 0}
     - target: {fileID: 5918129840377076012, guid: 0e962d9cdc9778147be9b83c32259d4f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -241,8 +241,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8210044653633382043, guid: 0e962d9cdc9778147be9b83c32259d4f, type: 3}
       propertyPath: dialogue.Array.data[0]
-      value: Rumor has it that there is treasure behind this door, but I cant figure
-        out how to open it...
+      value: There seems to be a tunnel beyond this hole, but I can't tell where
+        it leads...
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
