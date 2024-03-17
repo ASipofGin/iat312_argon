@@ -1425,7 +1425,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8210044653633382043, guid: 0e962d9cdc9778147be9b83c32259d4f, type: 3}
       propertyPath: dialogue.Array.data[0]
-      value: It surely has been a while your magesty.  I offer my heartfelt congratulations
+      value: It surely has been a while your highness. I offer my heartfelt congratulations
         and deepest respects.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3107,8 +3107,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8210044653633382043, guid: 0e962d9cdc9778147be9b83c32259d4f, type: 3}
       propertyPath: dialogue.Array.data[0]
-      value: Your Highness, as you ascend to the throne today, may your reign be
-        marked by grace, wisdom, and unwavering dedication to our kingdom.
+      value: Your Highness,  may your reign be marked by grace, wisdom, and unwavering
+        dedication to our kingdom.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

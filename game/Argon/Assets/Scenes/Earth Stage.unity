@@ -417,8 +417,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8210044653633382043, guid: 0e962d9cdc9778147be9b83c32259d4f, type: 3}
       propertyPath: dialogue.Array.data[0]
-      value: A strong leader must have good resolve. Pass my puzzles and you shall
-        recieve my gifts. Should you fail, I fear there is no hope for the kingdom.
+      value: This will be your final trial. A strong leader must have good resolve.
+        Pass my puzzles and you shall recieve my gifts. Should you fail, I fear there
+        is no hope for the kingdom.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

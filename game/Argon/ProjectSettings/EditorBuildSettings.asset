@@ -39,6 +39,12 @@ EditorBuildSettings:
     path: Assets/Scenes/VNConfrontation.unity
     guid: 63027c95bd0dba0478ade7f22ff2668c
   - enabled: 1
+    path: Assets/Scenes/VNConfrontation 2.unity
+    guid: 1d74eebc9bbcc864280e7646fdc763a4
+  - enabled: 1
+    path: Assets/Scenes/Aide Fight.unity
+    guid: 4789c87632b897e47af293e919adff50
+  - enabled: 1
     path: Assets/Scenes/Mana Stage.unity
     guid: 7b43095523a78234980f30abb9572aac
   m_configObjects: {}
