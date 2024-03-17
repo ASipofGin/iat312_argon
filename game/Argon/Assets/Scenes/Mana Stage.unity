@@ -1396,6 +1396,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7429627094261721384, guid: aa79757b727069549910ebe9ad501d3a, type: 3}
   m_PrefabInstance: {fileID: 223239222}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &300397751 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5955033962621867286, guid: 10f2fc1df4681a9479b2f25392876bb7, type: 3}
+  m_PrefabInstance: {fileID: 127462842}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &353877429
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3910,7 +3915,7 @@ PrefabInstance:
     - target: {fileID: 6663106212456526270, guid: 8aea8292a0f468940b459207038cda69, type: 3}
       propertyPath: keyObject
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 300397751}
     - target: {fileID: 7234513170916106673, guid: 8aea8292a0f468940b459207038cda69, type: 3}
       propertyPath: m_Name
       value: Key Door 1 (1)
