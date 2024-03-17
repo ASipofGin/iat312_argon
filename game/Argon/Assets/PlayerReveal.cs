@@ -98,4 +98,9 @@ public class PlayerReveal : MonoBehaviour
     {
         learnedReveal = true;
     }
+
+    public void DeactivateReveal()
+    {
+        learnedReveal = false;
+    }
 }

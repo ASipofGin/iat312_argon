@@ -44,4 +44,9 @@ public class PlayerSummon : MonoBehaviour
     public void learnSummon(){
         learnedSummon = true;
     }
+
+    public void DeactivateSummon()
+    {
+        learnedSummon = false;
+    }
 }

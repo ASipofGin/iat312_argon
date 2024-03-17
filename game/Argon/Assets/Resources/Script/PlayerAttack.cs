@@ -76,4 +76,13 @@ public class PlayerAttack : MonoBehaviour
     {
         canAttack = true;
     }
+
+    public void DeactivateAttack()
+    {
+        canAttack = false;
+        if (animator != null){
+            animator.SetBool("isAttacking", false);
+        }
+
+    }
 }

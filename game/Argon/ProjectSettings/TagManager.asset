@@ -13,6 +13,9 @@ TagManager:
   - Despawn
   - Revealable
   - GameManager
+  - MainAbilityIcon
+  - NextAbilityIcon
+  - PreviousAbilityIcon
   layers:
   - Default
   - TransparentFX

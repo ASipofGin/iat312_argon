@@ -1,169 +1,3 @@
-// using UnityEngine;
-
-// public class GameManager : MonoBehaviour
-// {
-//     // Make sure there's only one instance of GameManager
-//     public static GameManager instance;
-
-//     private void Awake()
-//     {
-//         if (instance == null)
-//         {
-//             instance = this;
-//             DontDestroyOnLoad(gameObject);
-//         }
-//         else
-//         {
-//             Destroy(gameObject);
-//         }
-//     }
-
-//     // Start is called before the first frame update
-//     void Start()
-//     {
-//         LoadPlayerAbilities();
-//     }
-
-//     // Update the player's abilities based on saved state
-//     void LoadPlayerAbilities()
-//     {
-//         GameObject player = GameObject.FindGameObjectWithTag("Player");
-//         if (player != null)
-//         {
-//             PlayerMovement pm = player.GetComponent<PlayerMovement>();
-//             PlayerAttack pa = player.GetComponent<PlayerAttack>();
-//             PlayerSummon ps = player.GetComponent<PlayerSummon>();
-//             PlayerReveal pr = player.GetComponent<PlayerReveal>();
-
-//             // Check PlayerPrefs for each ability
-//             if (PlayerPrefs.GetInt("DashLearned", 0) == 1)
-//             {
-//                 pm.learnDash();
-//             }
-//             if (PlayerPrefs.GetInt("AttackLearned", 0) == 1)
-//             {
-//                 pa.learnAttack();
-//             }
-//             if (PlayerPrefs.GetInt("SummonLearned", 0) == 1)
-//             {
-//                 ps.learnSummon();
-//             }
-//             if (PlayerPrefs.GetInt("RevealLearned", 0) == 1)
-//             {
-//                 pr.learnReveal();
-//             }
-//         }
-//     }
-
-//     // Call this method when an ability is learned
-//     public void LearnAbility(string abilityId)
-//     {
-//         switch (abilityId)
-//         {
-//             case "dash":
-//                 PlayerPrefs.SetInt("DashLearned", 1);
-//                 break;
-//             case "attack":
-//                 PlayerPrefs.SetInt("AttackLearned", 1);
-//                 break;
-//             case "summon":
-//                 PlayerPrefs.SetInt("SummonLearned", 1);
-//                 break;
-//             case "reveal":
-//                 PlayerPrefs.SetInt("RevealLearned", 1);
-//                 break;
-//         }
-//         PlayerPrefs.Save();
-//     }
-// }
-
-// using UnityEngine;
-
-// public class GameManager : MonoBehaviour
-// {
-//     // Make sure there's only one instance of GameManager
-//     public static GameManager instance;
-
-//     // Declare boolean variables for abilities
-//     private bool hasDash = false;
-//     private bool hasAttack = false;
-//     private bool hasSummon = false;
-//     private bool hasReveal = false;
-
-//     private void Awake()
-//     {
-//         if (instance == null)
-//         {
-//             instance = this;
-//             DontDestroyOnLoad(gameObject);
-//         }
-//         else
-//         {
-//             Destroy(gameObject);
-//         }
-//     }
-
-//     // Start is called before the first frame update
-//     void Start()
-//     {
-//         LoadPlayerAbilities();
-//     }
-
-//     // Update the player's abilities based on the current state
-//     void LoadPlayerAbilities()
-//     {
-//         GameObject player = GameObject.FindGameObjectWithTag("Player");
-//         Debug.Log("made it");
-//         if (player != null)
-//         {
-
-//             Debug.Log("did it");
-//             PlayerMovement pm = player.GetComponent<PlayerMovement>();
-//             PlayerAttack pa = player.GetComponent<PlayerAttack>();
-//             PlayerSummon ps = player.GetComponent<PlayerSummon>();
-//             PlayerReveal pr = player.GetComponent<PlayerReveal>();
-
-//             // Check the boolean flags for each ability
-//             if (hasDash)
-//             {
-//                 pm.learnDash();
-//             }
-//             if (hasAttack)
-//             {
-//                 pa.learnAttack();
-//             }
-//             if (hasSummon)
-//             {
-//                 ps.learnSummon();
-//             }
-//             if (hasReveal)
-//             {
-//                 pr.learnReveal();
-//             }
-//         }
-//     }
-
-//     // Call this method when an ability is learned
-//     public void LearnAbility(string abilityId)
-//     {
-//         switch (abilityId)
-//         {
-//             case "dash":
-//                 hasDash = true;
-//                 break;
-//             case "attack":
-//                 hasAttack = true;
-//                 break;
-//             case "summon":
-//                 hasSummon = true;
-//                 break;
-//             case "reveal":
-//                 hasReveal = true;
-//                 break;
-//         }
-//     }
-// }
-
 using UnityEngine;
 using UnityEngine.SceneManagement; // Import this namespace
 
@@ -171,9 +5,13 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
+    [SerializeField]
     private bool hasDash = false;
+    [SerializeField]
     private bool hasAttack = false;
+    [SerializeField]
     private bool hasSummon = false;
+    [SerializeField]
     private bool hasReveal = false;
 
     private void Awake()
@@ -192,21 +30,35 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void Start(){
+
+    }
+    
+
     // This method is called every time a scene is loaded
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        LoadPlayerAbilities(); // Call LoadPlayerAbilities when a new scene is loaded
+        LoadPlayerAbilities();
     }
+       
 
     void LoadPlayerAbilities()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
+        AbilitySwap abilitySwap = FindObjectOfType<AbilitySwap>(); // Find the AbilitySwap component in the scene
+
         if (player != null)
         {
             PlayerMovement pm = player.GetComponent<PlayerMovement>();
             PlayerAttack pa = player.GetComponent<PlayerAttack>();
             PlayerSummon ps = player.GetComponent<PlayerSummon>();
             PlayerReveal pr = player.GetComponent<PlayerReveal>();
+
+            // Initialize the ability statuses in AbilitySwap based on the GameManager's flags
+            abilitySwap.SetAbilityUnlocked(0, hasDash); // Assuming dash is at index 0
+            abilitySwap.SetAbilityUnlocked(1, hasAttack); // Assuming attack is at index 1
+            abilitySwap.SetAbilityUnlocked(2, hasSummon); // Assuming summon is at index 2
+            abilitySwap.SetAbilityUnlocked(3, hasReveal); // Assuming reveal is at index 3
 
             if (hasDash) { pm.learnDash(); }
             if (hasAttack) { pa.learnAttack(); }
@@ -217,12 +69,26 @@ public class GameManager : MonoBehaviour
 
     public void LearnAbility(string abilityId)
     {
+        AbilitySwap abilitySwap = FindObjectOfType<AbilitySwap>(); // Find the AbilitySwap component in the scene
+
         switch (abilityId)
         {
-            case "dash": hasDash = true; break;
-            case "attack": hasAttack = true; break;
-            case "summon": hasSummon = true; break;
-            case "reveal": hasReveal = true; break;
+            case "dash":
+                hasDash = true;
+                abilitySwap.SetAbilityUnlocked(0, true); // Assuming dash is at index 0
+                break;
+            case "attack":
+                hasAttack = true;
+                abilitySwap.SetAbilityUnlocked(1, true); // Assuming attack is at index 1
+                break;
+            case "summon":
+                hasSummon = true;
+                abilitySwap.SetAbilityUnlocked(2, true); // Assuming summon is at index 2
+                break;
+            case "reveal":
+                hasReveal = true;
+                abilitySwap.SetAbilityUnlocked(3, true); // Assuming reveal is at index 3
+                break;
         }
     }
 
@@ -231,4 +97,11 @@ public class GameManager : MonoBehaviour
         // Unsubscribe from the sceneLoaded event to prevent memory leaks
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
+
+    public bool HasDash() { return hasDash; }
+    public bool HasAttack() { return hasAttack; }
+    public bool HasSummon() { return hasSummon; }
+    public bool HasReveal() { return hasReveal; }
 }
+
+
