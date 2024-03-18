@@ -102,6 +102,12 @@ public class PlayerReveal : MonoBehaviour
     public void DeactivateReveal()
     {
         learnedReveal = false;
-        estc.SightDisable();
-    }
+
+        if (isRevealActive == true){
+            isRevealActive = !isRevealActive;
+            ToggleReveal(isRevealActive);   
+            estc.SightDisable();
+        }
+ 
+        }
 }

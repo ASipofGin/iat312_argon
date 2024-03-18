@@ -19,7 +19,7 @@ public class NPCBehaviour : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && playerProximity)
+        if (Input.GetKeyDown(KeyCode.F) && playerProximity)
         {
             if (dialoguePanel.activeInHierarchy)
             {

@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement; // Include the SceneManagement namespace
-
+using System.Linq;
 public class AbilitySwap : MonoBehaviour
 {
     public Ability[] abilities; // Populate this array with your abilities in the Inspector
@@ -179,6 +179,12 @@ public class AbilitySwap : MonoBehaviour
 
     void CycleAbility(int direction)
     {
+        // Check if there are no abilities or if no abilities are unlocked
+        if (abilities.Length == 0 || !abilitiesUnlocked.Any(u => u))
+        {
+            return; // Exit the function as there's nothing to cycle through
+        }
+
         int originalIndex = currentAbilityIndex;
         do
         {
@@ -196,6 +202,7 @@ public class AbilitySwap : MonoBehaviour
         // Refresh UI Elements
         RefreshUI();
     }
+
 
     void RefreshUI()
     {

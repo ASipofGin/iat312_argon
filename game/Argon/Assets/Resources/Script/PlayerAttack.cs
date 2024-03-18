@@ -38,7 +38,7 @@ public class PlayerAttack : MonoBehaviour
             if (timeBtwAttack <= 0)
             {
                 animator.SetBool("isAttacking", false);
-                if (Input.GetKey(KeyCode.F))
+                if (Input.GetKey(KeyCode.V))
                 {
                     animator.SetBool("isAttacking", true);
                     Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
