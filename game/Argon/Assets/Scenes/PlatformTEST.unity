@@ -14665,6 +14665,10 @@ PrefabInstance:
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 7738194408324157172, guid: ff8c61b0baa9abd4b8c1a7117a51407b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7738194408324157172, guid: ff8c61b0baa9abd4b8c1a7117a51407b, type: 3}
       propertyPath: m_TagString
       value: GameManager
       objectReference: {fileID: 0}
@@ -15727,6 +15731,10 @@ PrefabInstance:
     - target: {fileID: 4459385778002837317, guid: 749f74c95840aab4793e28eedebb0f81, type: 3}
       propertyPath: m_Name
       value: AbilitySwap
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459385778002837317, guid: 749f74c95840aab4793e28eedebb0f81, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7623790312608910985, guid: 749f74c95840aab4793e28eedebb0f81, type: 3}
       propertyPath: m_LocalPosition.x
