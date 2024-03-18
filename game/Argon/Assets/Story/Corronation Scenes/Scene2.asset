@@ -21,7 +21,7 @@ MonoBehaviour:
       actionType: 1
       coords: {x: 0, y: 0}
       moveSpeed: 0
-  - text: of the young princess of Argon. May this be a momentus occasion for all.
+  - text: of the young princess of Argon. May this be a momentous occasion for all.
     speaker: {fileID: 11400000, guid: 5ac72207819d68140a2929995c1e1873, type: 2}
     actions: []
   - text: My dear daughter, on this day I anoint you with the symbol of our kingdom.
