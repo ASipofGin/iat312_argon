@@ -5340,7 +5340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b8fa8a6282bd1c4c86a35315479d1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabToSummon: {fileID: 25798497308525419, guid: 92d4dad59a606144a81170281c750c80, type: 3}
+  prefabToSummon: {fileID: 25798497308525419, guid: 270fdc349eb04f84dadf4347e3aa5901, type: 3}
   summonOffset: {x: 2, y: 1}
   learnedSummon: 0
 --- !u!114 &8279312161801335202
