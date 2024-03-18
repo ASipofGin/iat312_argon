@@ -2668,7 +2668,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3a7af37668ab1c3418642148cc226dd6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eb02708bc00475d498cf59d4ea7766da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -4669,7 +4669,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3a7af37668ab1c3418642148cc226dd6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eb02708bc00475d498cf59d4ea7766da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -10167,6 +10167,10 @@ PrefabInstance:
     - target: {fileID: 3416277601946862261, guid: f0fe3084b46bbf043b167bfd778ee423, type: 3}
       propertyPath: m_Name
       value: Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 3416277601946862261, guid: f0fe3084b46bbf043b167bfd778ee423, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5755832234763702141, guid: f0fe3084b46bbf043b167bfd778ee423, type: 3}
       propertyPath: m_Pivot.x
