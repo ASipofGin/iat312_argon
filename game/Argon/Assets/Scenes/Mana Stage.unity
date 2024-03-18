@@ -6441,7 +6441,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8210044653633382043, guid: 0e962d9cdc9778147be9b83c32259d4f, type: 3}
       propertyPath: dialogue.Array.data[0]
-      value: 
+      value: 'Things exist in other dimensions of our world Princess, keep an open
+        mind and the Gem of Sight will aid you on the journey. You are running out
+        of time. '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

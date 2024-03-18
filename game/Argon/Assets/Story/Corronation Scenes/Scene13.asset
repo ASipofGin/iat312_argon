@@ -22,7 +22,7 @@ MonoBehaviour:
       actionType: 1
       coords: {x: 0, y: 0}
       moveSpeed: 0
-  - text: Where... Am... I?
+  - text: "Where am I... I need to get home\u2026 "
     speaker: {fileID: 11400000, guid: 7e5129eae7c550b46ab102be697bf0da, type: 2}
     actions: []
   background: {fileID: 21300000, guid: fa2ed3f748b1d5e4583099336137b2d2, type: 3}

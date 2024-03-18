@@ -355,7 +355,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8210044653633382043, guid: 0e962d9cdc9778147be9b83c32259d4f, type: 3}
       propertyPath: dialogue.Array.data[0]
-      value: It is an honor to be here for your corronation your highness.
+      value: "After years of raising you like my own, I\u2019m happy to see that
+        you\u2019ve grown this much. Congratulations Princess.  "
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1274,7 +1275,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8210044653633382043, guid: 0e962d9cdc9778147be9b83c32259d4f, type: 3}
       propertyPath: dialogue.Array.data[0]
-      value: My how much you've grown! I'm sure you'll make a great princess dear.
+      value: 'My, the young and sheltered Princess has grown up. May you continue
+        to grow and be as capable as His Majesty the King! '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1724,8 +1726,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8210044653633382043, guid: 0e962d9cdc9778147be9b83c32259d4f, type: 3}
       propertyPath: dialogue.Array.data[0]
-      value: It surely has been a while your highness. I offer my heartfelt congratulations
-        and deepest respects.
+      value: 'Congratulations my dear, our future ruler must grow up strong and wise
+        to lead the kingdom. Best of luck. '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4893,8 +4895,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8210044653633382043, guid: 0e962d9cdc9778147be9b83c32259d4f, type: 3}
       propertyPath: dialogue.Array.data[0]
-      value: Your Highness,  may your reign be marked by grace, wisdom, and unwavering
-        dedication to our kingdom.
+      value: "The Princess is still young; follow the teachings of the Aide. He will
+        surely lead you on the right path; he\u2019s been working with the king for
+        decades after all. "
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10932,8 +10935,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8210044653633382043, guid: 0e962d9cdc9778147be9b83c32259d4f, type: 3}
       propertyPath: dialogue.Array.data[0]
-      value: May your heart be guided by compassion, your decisions be just, and
-        your vision be one of unity and prosperity for all.
+      value: "It\u2019s unfortunate the Princess doesn\u2019t have a sibling to take
+        on these responsibilities, you must work hard to meet the kingdom\u2019s
+        expectations! "
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
