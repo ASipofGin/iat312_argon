@@ -38,10 +38,9 @@ public class GameManager : MonoBehaviour
     // This method is called every time a scene is loaded
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // Check if the loaded scene is the "Aide Fight" scene
-        if (scene.name == "Aide Fight") // Replace "Aide Fight" with the exact name of your scene
+ 
+        if (scene.name == "Aide Fight") 
         {
-            // If it is, destroy this object and return early
             Destroy(gameObject);
             return;
         }

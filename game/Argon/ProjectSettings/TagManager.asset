@@ -16,6 +16,9 @@ TagManager:
   - MainAbilityIcon
   - NextAbilityIcon
   - PreviousAbilityIcon
+  - Collectible
+  - CollectibleTracker
+  - CollectibleText
   layers:
   - Default
   - TransparentFX
