@@ -345,6 +345,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rain Module (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2005363725829462962, guid: 5570460cd16acee428f3fc6abf2eca26, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1749,6 +1753,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rain Module (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2005363725829462962, guid: 5570460cd16acee428f3fc6abf2eca26, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2023,6 +2031,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rain Module (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2005363725829462962, guid: 5570460cd16acee428f3fc6abf2eca26, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 6547422467137148212, guid: 5570460cd16acee428f3fc6abf2eca26, type: 3}
@@ -2292,6 +2304,22 @@ PrefabInstance:
     - target: {fileID: 2005363725829462962, guid: 5570460cd16acee428f3fc6abf2eca26, type: 3}
       propertyPath: m_Name
       value: Rain Module (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2005363725829462962, guid: 5570460cd16acee428f3fc6abf2eca26, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3610038066433845956, guid: 5570460cd16acee428f3fc6abf2eca26, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6547422467137148212, guid: 5570460cd16acee428f3fc6abf2eca26, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8401808901657540063, guid: 5570460cd16acee428f3fc6abf2eca26, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7143,6 +7171,22 @@ PrefabInstance:
     - target: {fileID: 2005363725829462962, guid: 5570460cd16acee428f3fc6abf2eca26, type: 3}
       propertyPath: m_Name
       value: Rain Module
+      objectReference: {fileID: 0}
+    - target: {fileID: 2005363725829462962, guid: 5570460cd16acee428f3fc6abf2eca26, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3610038066433845956, guid: 5570460cd16acee428f3fc6abf2eca26, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6547422467137148212, guid: 5570460cd16acee428f3fc6abf2eca26, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8401808901657540063, guid: 5570460cd16acee428f3fc6abf2eca26, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
