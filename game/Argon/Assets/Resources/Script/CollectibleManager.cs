@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -50,7 +51,6 @@ public class CollectibleManager : MonoBehaviour
         {
             ct = tracker.GetComponent<CollectibleTracker>();
             collectedText = ctext.GetComponent<CollectibleText>();
-
             ct.addCollected();
             transitionStarted = false;
             StartCoroutine(TextTransition()); 
@@ -79,7 +79,6 @@ public class CollectibleManager : MonoBehaviour
             yield return new WaitForSeconds(1f);
             Debug.Log("Waited");
             collectedText.StartCoroutine(collectedText.FadeTextToZeroAlpha(1f, collectedText.GetComponent<Text>()));
-            
             Destroy(gameObject);
 
     }

@@ -20,7 +20,7 @@ public class CollectibleText : MonoBehaviour
     public void Update()
     {
         ct = tracker.GetComponent<CollectibleTracker>();
-        collectedText.text = ct.collected.ToString() + "/7 Collected";
+        collectedText.text = ct.collected.ToString() + "/5 Collected";
     }
     public IEnumerator FadeTextToFullAlpha(float t, Text i)
     {
