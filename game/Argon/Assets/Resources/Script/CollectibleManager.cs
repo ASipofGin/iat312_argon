@@ -10,13 +10,14 @@ public class CollectibleManager : MonoBehaviour
 
     [SerializeField] GameObject tracker;
 
-    [SerializeField] GameObject text;
+    [SerializeField] GameObject ctext;
 
     public bool isPickedUp;
 
     public float amp;
     public float freq;
 
+    private bool transitionStarted = false;
     private CollectibleTracker ct;
     private CollectibleText collectedText;
     Vector3 initPos;
@@ -36,7 +37,7 @@ public class CollectibleManager : MonoBehaviour
 
         if (collectedText == null)
         {
-            text = GameObject.FindGameObjectWithTag("CollectibleText");
+            ctext = GameObject.FindGameObjectWithTag("CollectibleText");
         }
 
     }
@@ -45,16 +46,20 @@ public class CollectibleManager : MonoBehaviour
     void Update()
     {
 
-        if (isPickedUp)
+        if (isPickedUp && !transitionStarted)
         {
-            StartCoroutine(TextTransition());
             ct = tracker.GetComponent<CollectibleTracker>();
+            collectedText = ctext.GetComponent<CollectibleText>();
+
             ct.addCollected();
-            Destroy(gameObject);
+            transitionStarted = false;
+            StartCoroutine(TextTransition()); 
         }
         else{
             transform.position = new Vector3(initPos.x,Mathf.Sin(Time.time + freq) * amp + initPos.y, 0);
         }
+
+        
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
@@ -66,12 +71,17 @@ public class CollectibleManager : MonoBehaviour
 
     private IEnumerator TextTransition()
     {
-        collectedText = text.GetComponent<CollectibleText>();
-        collectedText.StartCoroutine(collectedText.FadeTextToFullAlpha(1f, collectedText.GetComponent<Text>()));
+            transitionStarted = true;
+            Debug.Log("running");
+            collectedText = ctext.GetComponent<CollectibleText>();
+            collectedText.StartCoroutine(collectedText.FadeTextToFullAlpha(1f, collectedText.GetComponent<Text>()));
 
-        yield return new WaitForSecondsRealtime(3);
+            yield return new WaitForSeconds(1f);
+            Debug.Log("Waited");
+            collectedText.StartCoroutine(collectedText.FadeTextToZeroAlpha(1f, collectedText.GetComponent<Text>()));
+            
+            Destroy(gameObject);
 
-        collectedText.StartCoroutine(collectedText.FadeTextToZeroAlpha(1f, collectedText.GetComponent<Text>()));
     }
 
 

@@ -7,7 +7,7 @@ public class CollectibleTracker : MonoBehaviour
 {
 
     public static CollectibleTracker instance;
-    public float collected;
+    public float collected = 0f;
     private void Awake()
     {
         if (instance == null)

@@ -4,8 +4,24 @@ using System.Collections;
 
 public class CollectibleText : MonoBehaviour
 {
+    public Text collectedText;
+    [SerializeField] GameObject tracker;
 
+    private CollectibleTracker ct;
 
+    private void Awake()
+    {
+        if (ct == null)
+        {
+            tracker = GameObject.FindGameObjectWithTag("CollectibleTracker");
+        }
+    }
+
+    public void Update()
+    {
+        ct = tracker.GetComponent<CollectibleTracker>();
+        collectedText.text = ct.collected.ToString() + "/7 Collected";
+    }
     public IEnumerator FadeTextToFullAlpha(float t, Text i)
     {
         i.color = new Color(i.color.r, i.color.g, i.color.b, 0);
