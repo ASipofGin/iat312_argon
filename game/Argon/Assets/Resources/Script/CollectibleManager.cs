@@ -10,7 +10,7 @@ public class CollectibleManager : MonoBehaviour
 
     [SerializeField] GameObject tracker;
 
-    [SerializeField] GameObject text;
+    [SerializeField] GameObject ctext;
 
     public bool isPickedUp;
 
@@ -37,7 +37,7 @@ public class CollectibleManager : MonoBehaviour
 
         if (collectedText == null)
         {
-            text = GameObject.FindGameObjectWithTag("CollectibleText");
+            ctext = GameObject.FindGameObjectWithTag("CollectibleText");
         }
 
     }
@@ -49,6 +49,8 @@ public class CollectibleManager : MonoBehaviour
         if (isPickedUp && !transitionStarted)
         {
             ct = tracker.GetComponent<CollectibleTracker>();
+            collectedText = ctext.GetComponent<CollectibleText>();
+
             ct.addCollected();
             transitionStarted = false;
             StartCoroutine(TextTransition()); 
@@ -56,6 +58,8 @@ public class CollectibleManager : MonoBehaviour
         else{
             transform.position = new Vector3(initPos.x,Mathf.Sin(Time.time + freq) * amp + initPos.y, 0);
         }
+
+        
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
@@ -69,7 +73,7 @@ public class CollectibleManager : MonoBehaviour
     {
             transitionStarted = true;
             Debug.Log("running");
-            collectedText = text.GetComponent<CollectibleText>();
+            collectedText = ctext.GetComponent<CollectibleText>();
             collectedText.StartCoroutine(collectedText.FadeTextToFullAlpha(1f, collectedText.GetComponent<Text>()));
 
             yield return new WaitForSeconds(1f);
