@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Scene1
   m_EditorClassIdentifier: 
   sentences:
-  - text: This cannot be...
+  - text: "Princess\u2026 How are you here? "
     speaker: {fileID: 11400000, guid: 23830d8d38fbb2543bd1c79da8346d09, type: 2}
     actions:
     - speaker: {fileID: 11400000, guid: 23830d8d38fbb2543bd1c79da8346d09, type: 2}
@@ -21,10 +21,11 @@ MonoBehaviour:
       actionType: 1
       coords: {x: 0, y: 0}
       moveSpeed: 0
-  - text: It is not possible that you are alive...
+  - text: "They said you were definitely\u2026 "
     speaker: {fileID: 11400000, guid: 23830d8d38fbb2543bd1c79da8346d09, type: 2}
     actions: []
-  - text: How could you do this...
+  - text: "What have you done to our kingdom? Father worked so hard to build it,
+      but you\u2019ve ruined it all! "
     speaker: {fileID: 11400000, guid: 7e5129eae7c550b46ab102be697bf0da, type: 2}
     actions:
     - speaker: {fileID: 11400000, guid: 7e5129eae7c550b46ab102be697bf0da, type: 2}

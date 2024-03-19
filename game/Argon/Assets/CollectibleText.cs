@@ -19,8 +19,11 @@ public class CollectibleText : MonoBehaviour
 
     public void Update()
     {
-        ct = tracker.GetComponent<CollectibleTracker>();
-        collectedText.text = ct.collected.ToString() + "/5 Collected";
+        if (tracker != null)
+        {
+            ct = tracker.GetComponent<CollectibleTracker>();
+            collectedText.text = ct.collected.ToString() + "/5 Collected";
+        }
     }
     public IEnumerator FadeTextToFullAlpha(float t, Text i)
     {

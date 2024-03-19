@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
  
-        if (scene.name == "Aide Fight") 
+        if (scene.name == "SpiritGathering") 
         {
             Destroy(gameObject);
             return;

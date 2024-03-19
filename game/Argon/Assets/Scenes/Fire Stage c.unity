@@ -3842,7 +3842,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8210044653633382043, guid: 0e962d9cdc9778147be9b83c32259d4f, type: 3}
       propertyPath: dialogue.Array.data[0]
-      value: Ellison's Cave 180m
+      value: Highlands 160m
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4473,7 +4473,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2948026503916021170, guid: 459951e1da95d7d4998d42253363cb06, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 160.14
+      value: 158.6
       objectReference: {fileID: 0}
     - target: {fileID: 2948026503916021170, guid: 459951e1da95d7d4998d42253363cb06, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4513,7 +4513,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8181920528368480956, guid: 459951e1da95d7d4998d42253363cb06, type: 3}
       propertyPath: targetScene
-      value: Filler level 2
+      value: SpiritGathering
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6961,7 +6961,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1749163519627779640, guid: 0dcb942a0522ee142bfef3e5ce1b9162, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 25.830101
+      value: 25.53
       objectReference: {fileID: 0}
     - target: {fileID: 1749163519627779640, guid: 0dcb942a0522ee142bfef3e5ce1b9162, type: 3}
       propertyPath: m_LocalPosition.z

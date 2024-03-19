@@ -21,6 +21,17 @@ public class CollectibleTracker : MonoBehaviour
         }
     }
 
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+
+        if (scene.name == "StartMenu")
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+    }
+
     public void addCollected()
     {
         collected += 1f;
