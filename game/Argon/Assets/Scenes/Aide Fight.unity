@@ -6327,7 +6327,7 @@ PrefabInstance:
     - target: {fileID: 3997670463235674471, guid: 79a77b1fe0f78cc47ba1347641bd9b36, type: 3}
       propertyPath: door
       value: 
-      objectReference: {fileID: 98812162}
+      objectReference: {fileID: 2044292259}
     - target: {fileID: 4691058222174148388, guid: 79a77b1fe0f78cc47ba1347641bd9b36, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -8091,6 +8091,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64144eb6489b58c46bbd5a3a80c445a9, type: 3}
+--- !u!1 &2044292259 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1204821101639338647, guid: 64144eb6489b58c46bbd5a3a80c445a9, type: 3}
+  m_PrefabInstance: {fileID: 2044292258}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2105876243
 GameObject:
   m_ObjectHideFlags: 0
