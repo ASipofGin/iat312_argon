@@ -397,9 +397,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: ccde39b4901c0eb469b88f00c99b21f1, type: 3}
     - target: {fileID: 8210044653633382043, guid: 0e962d9cdc9778147be9b83c32259d4f, type: 3}
       propertyPath: name
-      value: 'These gems have been the backbone of Argon Kingdom since the time of
-        war, only a true monarch can use these for the greater good. Pass my trial
-        and prove yourself worthy, Princess. The kingdom needs you.  '
+      value: Earth Spirit
       objectReference: {fileID: 0}
     - target: {fileID: 8210044653633382043, guid: 0e962d9cdc9778147be9b83c32259d4f, type: 3}
       propertyPath: npcName
@@ -419,9 +417,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8210044653633382043, guid: 0e962d9cdc9778147be9b83c32259d4f, type: 3}
       propertyPath: dialogue.Array.data[0]
-      value: This will be your final trial. A strong leader must have good resolve.
-        Pass my puzzles and you shall recieve my gifts. Should you fail, I fear there
-        is no hope for the kingdom.
+      value: 'These gems have been the backbone of Argon Kingdom since the time of
+        war, only a true monarch can use these for the greater good. Pass my trial
+        and prove yourself worthy, Princess. The kingdom needs you.  '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
