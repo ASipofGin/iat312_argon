@@ -18,5 +18,5 @@ MonoBehaviour:
     actions: []
   background: {fileID: 21300000, guid: d1e3d1357899d1647b2fca12dc639d65, type: 3}
   nextScene: {fileID: 11400000, guid: d751f1da66395c5449c4c55073f528c7, type: 2}
-  isLastScene: 0
-  targetScene: 
+  isLastScene: 1
+  targetScene: StartMenu
