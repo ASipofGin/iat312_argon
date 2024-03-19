@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VNExposition.unity
     guid: a5f4d6af60ea5284a9f792fffbebe4a8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/VNExposition 1.unity
     guid: 95ae0fd810d76ee4ba485981fad63da4
   - enabled: 1
@@ -81,17 +81,14 @@ EditorBuildSettings:
     path: Assets/Scenes/SpiritGathering.unity
     guid: 99ee1fb269659ae4d98555c0d17a5e62
   - enabled: 1
-    path: Assets/Scenes/SANDBOX DONOT TOUCH.unity
-    guid: b96a93ea53111a749860682632c5b047
-  - enabled: 1
     path: Assets/Scenes/VNConfrontation.unity
     guid: 63027c95bd0dba0478ade7f22ff2668c
   - enabled: 1
+    path: Assets/Scenes/Aide Fight.unity
+    guid: 4789c87632b897e47af293e919adff50
+  - enabled: 1
     path: Assets/Scenes/VNConfrontation 2.unity
     guid: 1d74eebc9bbcc864280e7646fdc763a4
-  - enabled: 1
-    path: Assets/Scenes/PlayAgain.unity
-    guid: e74f43af5310f75449ce5cccca08bbfb
   - enabled: 1
     path: Assets/Scenes/EndingCheck.unity
     guid: 0c0c3e16f603ea944b4eebe4d33fae63
@@ -99,6 +96,9 @@ EditorBuildSettings:
     path: Assets/Scenes/VNCollectibles.unity
     guid: 351216627cf7204489ab39bfc4f94c98
   - enabled: 1
-    path: Assets/Scenes/Aide Fight.unity
-    guid: 4789c87632b897e47af293e919adff50
+    path: Assets/Scenes/PlayAgain.unity
+    guid: e74f43af5310f75449ce5cccca08bbfb
+  - enabled: 1
+    path: Assets/Scenes/SANDBOX DONOT TOUCH.unity
+    guid: b96a93ea53111a749860682632c5b047
   m_configObjects: {}
