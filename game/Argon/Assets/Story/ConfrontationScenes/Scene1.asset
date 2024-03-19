@@ -21,36 +21,53 @@ MonoBehaviour:
       actionType: 1
       coords: {x: 0, y: 0}
       moveSpeed: 0
+    - speaker: {fileID: 11400000, guid: 7e5129eae7c550b46ab102be697bf0da, type: 2}
+      spriteIndex: 1
+      actionType: 1
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
   - text: "They said you were definitely\u2026 "
     speaker: {fileID: 11400000, guid: 23830d8d38fbb2543bd1c79da8346d09, type: 2}
     actions: []
   - text: "What have you done to our kingdom? Father worked so hard to build it,
       but you\u2019ve ruined it all! "
     speaker: {fileID: 11400000, guid: 7e5129eae7c550b46ab102be697bf0da, type: 2}
-    actions:
-    - speaker: {fileID: 11400000, guid: 7e5129eae7c550b46ab102be697bf0da, type: 2}
-      spriteIndex: 0
-      actionType: 1
-      coords: {x: 0, y: 0}
-      moveSpeed: 0
+    actions: []
   - text: You will pay for the death of my father
     speaker: {fileID: 11400000, guid: 7e5129eae7c550b46ab102be697bf0da, type: 2}
     actions: []
-  - text: And disgracing the royal throne. I will take back what is mine.
-    speaker: {fileID: 11400000, guid: 7e5129eae7c550b46ab102be697bf0da, type: 2}
-    actions:
-    - speaker: {fileID: 11400000, guid: 7e5129eae7c550b46ab102be697bf0da, type: 2}
-      spriteIndex: 0
-      actionType: 1
-      coords: {x: 0, y: 0}
-      moveSpeed: 0
-  - text: You will never understand how I felt living in your father's shadow!
+  - text: The late king was foolish, he strived to make it a kingdom for the poor!
     speaker: {fileID: 11400000, guid: 23830d8d38fbb2543bd1c79da8346d09, type: 2}
     actions: []
-  - text: The false king calls for his guards and runs away
-    speaker: {fileID: 11400000, guid: 8c9ced115d6e4ef4a827bdf4ec99bf41, type: 2}
+  - text: "This kingdom could flourish if we rid it of the common folk, yet he didn\u2019t
+      listen to me."
+    speaker: {fileID: 11400000, guid: 23830d8d38fbb2543bd1c79da8346d09, type: 2}
+    actions: []
+  - text: 'Now that he''s finally gone, the perfect kingdom can be built. '
+    speaker: {fileID: 11400000, guid: 23830d8d38fbb2543bd1c79da8346d09, type: 2}
+    actions: []
+  - text: "Finally gone\u2026? How could you\u2026 "
+    speaker: {fileID: 11400000, guid: 7e5129eae7c550b46ab102be697bf0da, type: 2}
+    actions: []
+  - text: "I\u2019m grateful that he was so trusting, my plan worked perfectly. "
+    speaker: {fileID: 11400000, guid: 23830d8d38fbb2543bd1c79da8346d09, type: 2}
+    actions: []
+  - text: "No\u2026 Father didn\u2019t die from illness\u2026 It was you!"
+    speaker: {fileID: 11400000, guid: 7e5129eae7c550b46ab102be697bf0da, type: 2}
+    actions: []
+  - text: "I decided to take it into my own hands, it\u2019s all for the kingdom,
+      Princess. You won\u2019t be able to stop me! "
+    speaker: {fileID: 11400000, guid: 23830d8d38fbb2543bd1c79da8346d09, type: 2}
+    actions: []
+  - text: The false king flees while calling his guards to swarm the princess.
+    speaker: {fileID: 11400000, guid: 23830d8d38fbb2543bd1c79da8346d09, type: 2}
     actions:
     - speaker: {fileID: 11400000, guid: 23830d8d38fbb2543bd1c79da8346d09, type: 2}
+      spriteIndex: 1
+      actionType: 3
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+    - speaker: {fileID: 11400000, guid: 7e5129eae7c550b46ab102be697bf0da, type: 2}
       spriteIndex: 1
       actionType: 3
       coords: {x: 0, y: 0}

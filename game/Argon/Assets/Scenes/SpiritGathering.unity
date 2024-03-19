@@ -689,7 +689,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1496989556139692636, guid: 0e962d9cdc9778147be9b83c32259d4f, type: 3}
       propertyPath: m_Size.x
-      value: 48.873833
+      value: 48.968914
       objectReference: {fileID: 0}
     - target: {fileID: 1496989556139692636, guid: 0e962d9cdc9778147be9b83c32259d4f, type: 3}
       propertyPath: m_Size.y
@@ -697,11 +697,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1496989556139692636, guid: 0e962d9cdc9778147be9b83c32259d4f, type: 3}
       propertyPath: m_Offset.x
-      value: -11.41618
+      value: -11.368639
       objectReference: {fileID: 0}
     - target: {fileID: 1496989556139692636, guid: 0e962d9cdc9778147be9b83c32259d4f, type: 3}
       propertyPath: m_Offset.y
-      value: 3.6655269
+      value: 3.6655273
       objectReference: {fileID: 0}
     - target: {fileID: 1496989556139692636, guid: 0e962d9cdc9778147be9b83c32259d4f, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -793,9 +793,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8210044653633382043, guid: 0e962d9cdc9778147be9b83c32259d4f, type: 3}
       propertyPath: dialogue.Array.data[0]
-      value: This will be your final trial. A strong leader must have good resolve.
-        Pass my puzzles and you shall recieve my gifts. Should you fail, I fear there
-        is no hope for the kingdom.
+      value: Congratulations Princess you have completed all of our trials. You have
+        truly grown into a monarch befitting of the throne. However there stands
+        only one obstacle in your way. Go back to the castle and make use of our
+        powers. We wish you the best of luck Princess.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

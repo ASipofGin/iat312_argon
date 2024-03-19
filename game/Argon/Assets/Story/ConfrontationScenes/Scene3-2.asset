@@ -16,10 +16,7 @@ MonoBehaviour:
   - text: The king's aide was slain by the princess.
     speaker: {fileID: 11400000, guid: 8c9ced115d6e4ef4a827bdf4ec99bf41, type: 2}
     actions: []
-  - text: After reclaiming her throne, the kingdom was returned to peace.
-    speaker: {fileID: 11400000, guid: 8c9ced115d6e4ef4a827bdf4ec99bf41, type: 2}
-    actions: []
-  background: {fileID: 21300000, guid: f3fa17fd42856c04085e84389a36273d, type: 3}
-  nextScene: {fileID: 11400000, guid: 5980f44987253f240bf8517bbebb6874, type: 2}
+  background: {fileID: 21300000, guid: 0d022f71a9919af4aa9354d06cac9e92, type: 3}
+  nextScene: {fileID: 11400000, guid: 49d428fba95c6594b9dc8b8d8d0b06b9, type: 2}
   isLastScene: 0
   targetScene: 
