@@ -2941,15 +2941,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6069980837134412277, guid: c3a5a2fa4928c5e41abe3d93754458ae, type: 3}
       propertyPath: m_Color.b
-      value: 0.90588236
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6069980837134412277, guid: c3a5a2fa4928c5e41abe3d93754458ae, type: 3}
+      propertyPath: m_Color.g
+      value: 0.21226418
       objectReference: {fileID: 0}
     - target: {fileID: 6069980837134412277, guid: c3a5a2fa4928c5e41abe3d93754458ae, type: 3}
       propertyPath: m_Color.r
-      value: 0
+      value: 0.5335616
       objectReference: {fileID: 0}
     - target: {fileID: 6069980837134412277, guid: c3a5a2fa4928c5e41abe3d93754458ae, type: 3}
       propertyPath: m_Intensity
-      value: 2
+      value: 4.4
       objectReference: {fileID: 0}
     - target: {fileID: 6069980837134412277, guid: c3a5a2fa4928c5e41abe3d93754458ae, type: 3}
       propertyPath: m_ApplyToSortingLayers.Array.data[0]
@@ -3428,15 +3432,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6069980837134412277, guid: c3a5a2fa4928c5e41abe3d93754458ae, type: 3}
       propertyPath: m_Color.g
-      value: 0.880723
+      value: 0.2264151
       objectReference: {fileID: 0}
     - target: {fileID: 6069980837134412277, guid: c3a5a2fa4928c5e41abe3d93754458ae, type: 3}
       propertyPath: m_Color.r
-      value: 0
+      value: 0.4269151
       objectReference: {fileID: 0}
     - target: {fileID: 6069980837134412277, guid: c3a5a2fa4928c5e41abe3d93754458ae, type: 3}
       propertyPath: m_Intensity
-      value: 10
+      value: 18.5
       objectReference: {fileID: 0}
     - target: {fileID: 6069980837134412277, guid: c3a5a2fa4928c5e41abe3d93754458ae, type: 3}
       propertyPath: m_ApplyToSortingLayers.Array.size
@@ -3981,20 +3985,24 @@ PrefabInstance:
       value: High Lit Light
       objectReference: {fileID: 0}
     - target: {fileID: 6069980837134412277, guid: c3a5a2fa4928c5e41abe3d93754458ae, type: 3}
-      propertyPath: m_Color.b
-      value: 0.18836021
-      objectReference: {fileID: 0}
-    - target: {fileID: 6069980837134412277, guid: c3a5a2fa4928c5e41abe3d93754458ae, type: 3}
-      propertyPath: m_Color.g
+      propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6069980837134412277, guid: c3a5a2fa4928c5e41abe3d93754458ae, type: 3}
+      propertyPath: m_Color.b
+      value: 0.23584908
+      objectReference: {fileID: 0}
+    - target: {fileID: 6069980837134412277, guid: c3a5a2fa4928c5e41abe3d93754458ae, type: 3}
+      propertyPath: m_Color.g
+      value: 0.2742197
+      objectReference: {fileID: 0}
+    - target: {fileID: 6069980837134412277, guid: c3a5a2fa4928c5e41abe3d93754458ae, type: 3}
       propertyPath: m_Color.r
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6069980837134412277, guid: c3a5a2fa4928c5e41abe3d93754458ae, type: 3}
       propertyPath: m_Intensity
-      value: 17
+      value: 29.75
       objectReference: {fileID: 0}
     - target: {fileID: 6069980837134412277, guid: c3a5a2fa4928c5e41abe3d93754458ae, type: 3}
       propertyPath: m_ApplyToSortingLayers.Array.size
