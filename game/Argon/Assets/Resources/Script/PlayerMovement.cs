@@ -244,6 +244,8 @@ public class PlayerMovement : MonoBehaviour
     public void ResetAnimation()
     {
         animator.SetBool("isDashing", false);
+        animator.SetBool("isAttacking", false);
+        animator.SetBool("isMoving", false);
     }
 
     void OnDisable()
